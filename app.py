@@ -1,5 +1,6 @@
 import glob
 import os
+import re
 from datetime import datetime, timezone
 
 import gspread
@@ -20,6 +21,14 @@ CHUNK_SIZE, OVERLAP, TOP_K = 800, 150, 4
 UNANSWERED_FIELDS = ["timestamp", "question", "status", "answer", "answered_at"]
 NO_ANSWER_MARKER = "NO_ANSWER:"
 GSHEET_SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+
+# ---- Most-asked-question tracking (persisted in Google Sheets) ----
+QUESTION_USAGE_FIELDS = ["question", "answer", "count"]
+TOP_QUESTIONS_SHOWN = 3
+FAQ_QA_PATTERN = re.compile(
+    r"^#{1,6}\s*\*{0,2}Q:\s*(?P<question>.+?)\*{0,2}\s*$\n+(?P<answer>.*?)(?=^#{1,6}\s|^-{3,}\s*$|\Z)",
+    re.DOTALL | re.MULTILINE,
+)
 
 SYSTEM_PROMPT = (
     "You help society members with PNG (piped natural gas) connection applications. "
@@ -50,7 +59,13 @@ def get_worksheets():
         stats_ws = sh.add_worksheet("Stats", rows=10, cols=2)
         stats_ws.append_rows([["key", "value"], ["visits", 0], ["questions", 0]], value_input_option="RAW")
 
-    return questions_ws, stats_ws
+    try:
+        usage_ws = sh.worksheet("QuestionUsage")
+    except gspread.exceptions.WorksheetNotFound:
+        usage_ws = sh.add_worksheet("QuestionUsage", rows=1000, cols=len(QUESTION_USAGE_FIELDS))
+        usage_ws.append_row(QUESTION_USAGE_FIELDS, value_input_option="RAW")
+
+    return questions_ws, stats_ws, usage_ws
 
 
 def read_docs():
@@ -77,6 +92,16 @@ def chunk(text):
     return [text[i : i + CHUNK_SIZE] for i in range(0, len(text), step) if text[i : i + CHUNK_SIZE].strip()]
 
 
+def parse_faq_pairs(text):
+    pairs = []
+    for m in FAQ_QA_PATTERN.finditer(text):
+        question = m.group("question").strip()
+        answer = m.group("answer").strip()
+        if question and answer:
+            pairs.append((question, answer))
+    return pairs
+
+
 def embed(texts, task):
     vecs = []
     for i in range(0, len(texts), 50):  # batch to respect free-tier limits
@@ -92,24 +117,34 @@ def embed(texts, task):
 
 @st.cache_resource(show_spinner="Indexing documents...")
 def build_index():
-    chunks, sources = [], []
+    chunks, sources, chunk_qa = [], [], []
     for name, text in read_docs():
-        for c in chunk(text):
-            chunks.append(c)
-            sources.append(name)
+        pairs = parse_faq_pairs(text)
+        if pairs:
+            for question, answer in pairs:
+                chunks.append(f"Q: {question}\nA: {answer}")
+                sources.append(name)
+                chunk_qa.append((question, answer))
+        else:
+            for c in chunk(text):
+                chunks.append(c)
+                sources.append(name)
+                chunk_qa.append(None)
     if not chunks:
-        return [], [], None
-    return chunks, sources, embed(chunks, "RETRIEVAL_DOCUMENT")
+        return [], [], [], None
+    return chunks, sources, chunk_qa, embed(chunks, "RETRIEVAL_DOCUMENT")
 
 
-def retrieve(question, chunks, sources, matrix):
+def retrieve(question, chunks, sources, chunk_qa, matrix):
     q = embed([question], "RETRIEVAL_QUERY")[0]
     idx = np.argsort(matrix @ q)[::-1][:TOP_K]
-    return [(chunks[i], sources[i]) for i in idx]
+    hits = [(chunks[i], sources[i]) for i in idx]
+    top_qa = chunk_qa[idx[0]] if len(idx) else None
+    return hits, top_qa
 
 
 def read_unanswered():
-    questions_ws, _ = get_worksheets()
+    questions_ws, _, _ = get_worksheets()
     values = questions_ws.get_all_values()
     if not values:
         return []
@@ -125,7 +160,7 @@ def log_unanswered(question):
     )
     if already_pending:
         return
-    questions_ws, _ = get_worksheets()
+    questions_ws, _, _ = get_worksheets()
     questions_ws.append_row(
         [datetime.now(timezone.utc).isoformat(timespec="seconds"), question, "pending", "", ""],
         value_input_option="RAW",
@@ -133,7 +168,7 @@ def log_unanswered(question):
 
 
 def resolve_unanswered(target, status, answer=""):
-    questions_ws, _ = get_worksheets()
+    questions_ws, _, _ = get_worksheets()
     values = questions_ws.get_all_values()
     header, *rows = values
     for i, row in enumerate(rows, start=2):  # sheet row 1 is the header
@@ -145,7 +180,7 @@ def resolve_unanswered(target, status, answer=""):
 
 
 def read_stats():
-    _, stats_ws = get_worksheets()
+    _, stats_ws, _ = get_worksheets()
     stats = {}
     for row in stats_ws.get_all_values()[1:]:
         if len(row) >= 2:
@@ -157,7 +192,7 @@ def read_stats():
 
 
 def bump_stat(key):
-    _, stats_ws = get_worksheets()
+    _, stats_ws, _ = get_worksheets()
     values = stats_ws.get_all_values()
     header, *rows = values
     for i, row in enumerate(rows, start=2):
@@ -169,6 +204,35 @@ def bump_stat(key):
     return 1
 
 
+def bump_question_usage(question, answer):
+    _, _, usage_ws = get_worksheets()
+    values = usage_ws.get_all_values()
+    header, *rows = values
+    for i, row in enumerate(rows, start=2):
+        if row and row[0] == question:
+            current = int(row[2]) if len(row) > 2 and row[2].strip().isdigit() else 0
+            usage_ws.update(range_name=f"C{i}", values=[[current + 1]], value_input_option="RAW")
+            return
+    usage_ws.append_row([question, answer, 1], value_input_option="RAW")
+
+
+def top_questions(n=TOP_QUESTIONS_SHOWN):
+    _, _, usage_ws = get_worksheets()
+    values = usage_ws.get_all_values()
+    if not values:
+        return []
+    header, *rows = values
+    records = [dict(zip(header, row)) for row in rows]
+
+    def count_of(r):
+        try:
+            return int(r.get("count", 0))
+        except ValueError:
+            return 0
+
+    return sorted(records, key=count_of, reverse=True)[:n]
+
+
 st.set_page_config(page_title="PNG Application Helper", page_icon="🔥", initial_sidebar_state="collapsed")
 st.title("🔥 PNG Application Helper")
 st.caption("Information sourced from society PNG rules. Please contact committee members or GAIL representatives for any further clarifications.")
@@ -177,7 +241,15 @@ if "visited" not in st.session_state:
     st.session_state.visited = True
     bump_stat("visits")
 
-chunks, sources, matrix = build_index()
+top_qs = top_questions()
+if top_qs:
+    st.subheader("📊 Most Asked Questions")
+    for i, row in enumerate(top_qs, start=1):
+        with st.expander(f"{i}. {row['question']}", expanded=False):
+            st.caption(row["answer"])
+    st.divider()
+
+chunks, sources, chunk_qa, matrix = build_index()
 if matrix is None:
     st.error("No documents found. Add PDF/TXT files to the 'docs' folder.")
     st.stop()
@@ -191,7 +263,9 @@ if question := st.chat_input("Ask about PNG application steps, documents, fees, 
     bump_stat("questions")
     st.chat_message("user").write(question)
     st.session_state.messages.append({"role": "user", "content": question})
-    hits = retrieve(question, chunks, sources, matrix)
+    hits, top_qa = retrieve(question, chunks, sources, chunk_qa, matrix)
+    if top_qa:
+        bump_question_usage(*top_qa)
     context = "\n\n---\n\n".join(f"[{s}]\n{c}" for c, s in hits)
     prompt = f"Context:\n{context}\n\nQuestion: {question}"
     try:
