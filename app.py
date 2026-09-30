@@ -255,13 +255,17 @@ st.markdown(
         font-size: 0.75rem;
         color: rgba(250, 250, 250, 0.6);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 12px;
         z-index: 999;
     }}
     </style>
     <div class="app-footer">
-        <span>👀 Visits: {stats.get('visits', 0)} &nbsp;&nbsp;•&nbsp;&nbsp; 💬 Questions asked: {stats.get('questions', 0)}</span>
+        <span>👀 Visits: {stats.get('visits', 0)}</span>
+        <span>•</span>
+        <span>💬 Questions asked: {stats.get('questions', 0)}</span>
+        <span>•</span>
         <span>Created by @DKB</span>
     </div>
     """,
