@@ -2,3 +2,5 @@ streamlit
 google-genai
 pypdf
 numpy
+gspread
+google-auth
