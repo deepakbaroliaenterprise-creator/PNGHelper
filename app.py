@@ -151,7 +151,7 @@ def bump_stat(key):
 
 st.set_page_config(page_title="PNG Application Helper", page_icon="🔥", initial_sidebar_state="collapsed")
 st.title("🔥 PNG Application Helper")
-st.caption("Answers come from the society's PNG guidelines. Please confirm final details with the committee / gas provider.")
+st.caption("Information sourced from society PNG rules. Please contact committee members or GAIL representatives for any further clarifications.")
 
 if "visited" not in st.session_state:
     st.session_state.visited = True
@@ -266,7 +266,7 @@ st.markdown(
         <span>•</span>
         <span>💬 Questions asked: {stats.get('questions', 0)}</span>
         <span>•</span>
-        <span>Created by @DKB</span>
+        <span>Created by Deepak Barolia aka DKB</span>
     </div>
     """,
     unsafe_allow_html=True,
