@@ -1,5 +1,7 @@
+import csv
 import glob
 import os
+from datetime import datetime, timezone
 
 import numpy as np
 import streamlit as st
@@ -13,11 +15,20 @@ CHAT_MODEL = "gemini-flash-lite-latest"
 DOCS_DIR = "docs"
 CHUNK_SIZE, OVERLAP, TOP_K = 800, 150, 4
 
+# ---- Unanswered-question review process ----
+DATA_DIR = "data"
+UNANSWERED_LOG = os.path.join(DATA_DIR, "unanswered_questions.csv")
+UNANSWERED_FIELDS = ["timestamp", "question", "status", "answer", "answered_at"]
+ADMIN_ANSWERS_FILE = os.path.join(DOCS_DIR, "admin_added_answers.txt")
+NO_ANSWER_MARKER = "NO_ANSWER:"
+
 SYSTEM_PROMPT = (
     "You help society members with PNG (piped natural gas) connection applications. "
-    "Answer ONLY from the provided context. If the answer is not in the context, say you "
-    "don't know and suggest contacting the society committee or the gas provider. "
-    "Be brief, use bullet points and simple steps. Never ask for personal ID numbers."
+    "Answer ONLY from the provided context. Be brief, use bullet points and simple steps. "
+    "Never ask for personal ID numbers. "
+    "If, and only if, the answer to the question is not present in the context, reply with "
+    f"EXACTLY this and nothing else: '{NO_ANSWER_MARKER} I don't know. Please contact the "
+    "society committee or the gas provider.'"
 )
 
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
@@ -72,6 +83,52 @@ def retrieve(question, chunks, sources, matrix):
     return [(chunks[i], sources[i]) for i in idx]
 
 
+def read_unanswered():
+    if not os.path.isfile(UNANSWERED_LOG):
+        return []
+    with open(UNANSWERED_LOG, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def write_unanswered(rows):
+    with open(UNANSWERED_LOG, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=UNANSWERED_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def log_unanswered(question):
+    rows = read_unanswered()
+    already_pending = any(
+        r["question"].strip().lower() == question.strip().lower() and r["status"] == "pending" for r in rows
+    )
+    if already_pending:
+        return
+    os.makedirs(DATA_DIR, exist_ok=True)
+    rows.append(
+        {
+            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "question": question,
+            "status": "pending",
+            "answer": "",
+            "answered_at": "",
+        }
+    )
+    write_unanswered(rows)
+
+
+def resolve_unanswered(rows, target, status, answer=""):
+    target["status"] = status
+    target["answer"] = answer
+    target["answered_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    write_unanswered(rows)
+
+
+def append_faq_answer(question, answer):
+    with open(ADMIN_ANSWERS_FILE, "a", encoding="utf-8") as f:
+        f.write(f"\n### Q: {question}\n{answer}\n")
+
+
 st.set_page_config(page_title="PNG Application Helper", page_icon="🔥")
 st.title("🔥 PNG Application Helper")
 st.caption("Answers come from the society's PNG guidelines. Please confirm final details with the committee / gas provider.")
@@ -98,9 +155,62 @@ if question := st.chat_input("Ask about PNG application steps, documents, fees, 
             contents=prompt,
             config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT, temperature=0.2),
         )
-        answer = resp.text
+        answer = resp.text.strip()
+        if answer.startswith(NO_ANSWER_MARKER):
+            answer = answer[len(NO_ANSWER_MARKER) :].strip()
+            log_unanswered(question)
     except Exception:
         answer = "Sorry, the assistant is busy (free-tier limit). Please try again in a minute."
     answer += "\n\n_Sources: " + ", ".join(sorted({s for _, s in hits})) + "_"
     st.chat_message("assistant").write(answer)
     st.session_state.messages.append({"role": "assistant", "content": answer})
+
+with st.sidebar:
+    st.header("🛠️ Admin")
+    st.caption("Review questions the assistant couldn't answer and add answers to the knowledge base.")
+    if not st.session_state.get("admin_authed"):
+        pwd = st.text_input("Admin password", type="password", key="admin_pwd_input")
+        if st.button("Log in", key="admin_login_btn"):
+            if pwd and pwd == st.secrets.get("ADMIN_PASSWORD", ""):
+                st.session_state.admin_authed = True
+                st.rerun()
+            else:
+                st.error("Incorrect password.")
+    else:
+        if st.button("Log out", key="admin_logout_btn"):
+            st.session_state.admin_authed = False
+            st.rerun()
+
+        rows = read_unanswered()
+        pending = [r for r in rows if r["status"] == "pending"]
+        st.metric("Unanswered questions", len(pending))
+
+        for row in pending:
+            row_key = f"{row['timestamp']}_{row['question']}"
+            with st.expander(row["question"]):
+                st.caption(f"Asked: {row['timestamp']} UTC")
+                new_answer = st.text_area("Answer to add", key=f"answer_{row_key}")
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("Save answer", key=f"save_{row_key}"):
+                        if new_answer.strip():
+                            append_faq_answer(row["question"], new_answer.strip())
+                            resolve_unanswered(rows, row, "answered", new_answer.strip())
+                            build_index.clear()
+                            st.success("Saved. The assistant will use this answer from now on.")
+                            st.rerun()
+                        else:
+                            st.warning("Enter an answer before saving.")
+                with col2:
+                    if st.button("Dismiss", key=f"dismiss_{row_key}"):
+                        resolve_unanswered(rows, row, "dismissed")
+                        st.rerun()
+
+        with st.expander("Answered / dismissed history"):
+            resolved = [r for r in rows if r["status"] != "pending"]
+            if not resolved:
+                st.caption("Nothing resolved yet.")
+            for row in resolved:
+                st.markdown(f"**{row['status'].title()}** — {row['question']}")
+                if row["answer"]:
+                    st.caption(row["answer"])
