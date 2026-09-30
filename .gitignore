@@ -3,3 +3,5 @@
 
 __pycache__/
 *.pyc
+data/
+docs/admin_added_answers.txt

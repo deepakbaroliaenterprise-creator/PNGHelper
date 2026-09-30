@@ -1,13 +1,13 @@
+import csv
 import glob
+import json
 import os
 from datetime import datetime, timezone
 
-import gspread
 import numpy as np
 import streamlit as st
 from google import genai
 from google.genai import types
-from google.oauth2.service_account import Credentials
 from pypdf import PdfReader
 
 # ---- Config (verify model names in Google AI Studio; they change over time) ----
@@ -16,10 +16,15 @@ CHAT_MODEL = "gemini-flash-lite-latest"
 DOCS_DIR = "docs"
 CHUNK_SIZE, OVERLAP, TOP_K = 800, 150, 4
 
-# ---- Unanswered-question review process (persisted in Google Sheets) ----
+# ---- Unanswered-question review process ----
+DATA_DIR = "data"
+UNANSWERED_LOG = os.path.join(DATA_DIR, "unanswered_questions.csv")
 UNANSWERED_FIELDS = ["timestamp", "question", "status", "answer", "answered_at"]
+ADMIN_ANSWERS_FILE = os.path.join(DOCS_DIR, "admin_added_answers.txt")
 NO_ANSWER_MARKER = "NO_ANSWER:"
-GSHEET_SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+
+# ---- Usage stats (visits / questions asked) ----
+STATS_FILE = os.path.join(DATA_DIR, "stats.json")
 
 SYSTEM_PROMPT = (
     "You help society members with PNG (piped natural gas) connection applications. "
@@ -33,26 +38,6 @@ SYSTEM_PROMPT = (
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 
-@st.cache_resource
-def get_worksheets():
-    creds = Credentials.from_service_account_info(dict(st.secrets["gcp_service_account"]), scopes=GSHEET_SCOPES)
-    sh = gspread.authorize(creds).open_by_key(st.secrets["GSHEET_ID"])
-
-    try:
-        questions_ws = sh.worksheet("Questions")
-    except gspread.exceptions.WorksheetNotFound:
-        questions_ws = sh.add_worksheet("Questions", rows=1000, cols=len(UNANSWERED_FIELDS))
-        questions_ws.append_row(UNANSWERED_FIELDS, value_input_option="RAW")
-
-    try:
-        stats_ws = sh.worksheet("Stats")
-    except gspread.exceptions.WorksheetNotFound:
-        stats_ws = sh.add_worksheet("Stats", rows=10, cols=2)
-        stats_ws.append_rows([["key", "value"], ["visits", 0], ["questions", 0]], value_input_option="RAW")
-
-    return questions_ws, stats_ws
-
-
 def read_docs():
     texts = []
     for path in glob.glob(os.path.join(DOCS_DIR, "*")):
@@ -63,12 +48,6 @@ def read_docs():
         else:
             continue
         texts.append((os.path.basename(path), text))
-
-    answered = [r for r in read_unanswered() if r.get("status") == "answered" and r.get("answer")]
-    if answered:
-        admin_text = "\n\n".join(f"Q: {r['question']}\nA: {r['answer']}" for r in answered)
-        texts.append(("Admin Answers (Google Sheet)", admin_text))
-
     return texts
 
 
@@ -109,64 +88,65 @@ def retrieve(question, chunks, sources, matrix):
 
 
 def read_unanswered():
-    questions_ws, _ = get_worksheets()
-    values = questions_ws.get_all_values()
-    if not values:
+    if not os.path.isfile(UNANSWERED_LOG):
         return []
-    header, *rows = values
-    return [dict(zip(header, row)) for row in rows]
+    with open(UNANSWERED_LOG, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def write_unanswered(rows):
+    with open(UNANSWERED_LOG, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=UNANSWERED_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def log_unanswered(question):
     rows = read_unanswered()
     already_pending = any(
-        r.get("question", "").strip().lower() == question.strip().lower() and r.get("status") == "pending"
-        for r in rows
+        r["question"].strip().lower() == question.strip().lower() and r["status"] == "pending" for r in rows
     )
     if already_pending:
         return
-    questions_ws, _ = get_worksheets()
-    questions_ws.append_row(
-        [datetime.now(timezone.utc).isoformat(timespec="seconds"), question, "pending", "", ""],
-        value_input_option="RAW",
+    os.makedirs(DATA_DIR, exist_ok=True)
+    rows.append(
+        {
+            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "question": question,
+            "status": "pending",
+            "answer": "",
+            "answered_at": "",
+        }
     )
+    write_unanswered(rows)
 
 
-def resolve_unanswered(target, status, answer=""):
-    questions_ws, _ = get_worksheets()
-    values = questions_ws.get_all_values()
-    header, *rows = values
-    for i, row in enumerate(rows, start=2):  # sheet row 1 is the header
-        row_dict = dict(zip(header, row))
-        if row_dict.get("timestamp") == target["timestamp"] and row_dict.get("question") == target["question"]:
-            answered_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
-            questions_ws.update(range_name=f"C{i}:E{i}", values=[[status, answer, answered_at]], value_input_option="RAW")
-            break
+def resolve_unanswered(rows, target, status, answer=""):
+    target["status"] = status
+    target["answer"] = answer
+    target["answered_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    write_unanswered(rows)
+
+
+def append_faq_answer(question, answer):
+    with open(ADMIN_ANSWERS_FILE, "a", encoding="utf-8") as f:
+        f.write(f"\n### Q: {question}\n{answer}\n")
 
 
 def read_stats():
-    _, stats_ws = get_worksheets()
-    stats = {}
-    for row in stats_ws.get_all_values()[1:]:
-        if len(row) >= 2:
-            try:
-                stats[row[0]] = int(row[1])
-            except ValueError:
-                stats[row[0]] = 0
-    return stats
+    if not os.path.isfile(STATS_FILE):
+        return {"visits": 0, "questions": 0}
+    with open(STATS_FILE, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def bump_stat(key):
-    _, stats_ws = get_worksheets()
-    values = stats_ws.get_all_values()
-    header, *rows = values
-    for i, row in enumerate(rows, start=2):
-        if row and row[0] == key:
-            current = int(row[1]) if len(row) > 1 and row[1].strip().isdigit() else 0
-            stats_ws.update(range_name=f"B{i}", values=[[current + 1]], value_input_option="RAW")
-            return current + 1
-    stats_ws.append_row([key, 1], value_input_option="RAW")
-    return 1
+    os.makedirs(DATA_DIR, exist_ok=True)
+    stats = read_stats()
+    stats[key] = stats.get(key, 0) + 1
+    with open(STATS_FILE, "w", encoding="utf-8") as f:
+        json.dump(stats, f)
+    return stats
 
 
 st.set_page_config(page_title="PNG Application Helper", page_icon="🔥", initial_sidebar_state="collapsed")
@@ -239,7 +219,8 @@ with st.sidebar:
                 with col1:
                     if st.button("Save answer", key=f"save_{row_key}"):
                         if new_answer.strip():
-                            resolve_unanswered(row, "answered", new_answer.strip())
+                            append_faq_answer(row["question"], new_answer.strip())
+                            resolve_unanswered(rows, row, "answered", new_answer.strip())
                             build_index.clear()
                             st.success("Saved. The assistant will use this answer from now on.")
                             st.rerun()
@@ -247,7 +228,7 @@ with st.sidebar:
                             st.warning("Enter an answer before saving.")
                 with col2:
                     if st.button("Dismiss", key=f"dismiss_{row_key}"):
-                        resolve_unanswered(row, "dismissed")
+                        resolve_unanswered(rows, row, "dismissed")
                         st.rerun()
 
         with st.expander("Answered / dismissed history"):
