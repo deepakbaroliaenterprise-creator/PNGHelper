@@ -25,18 +25,39 @@ GSHEET_SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 # ---- Most-asked-question tracking (persisted in Google Sheets) ----
 QUESTION_USAGE_FIELDS = ["question", "answer", "count"]
 TOP_QUESTIONS_SHOWN = 3
+
+# "### **Q: ...**" / "### Q: ..." style (legacy FAQs.txt / admin-added answers)
 FAQ_QA_PATTERN = re.compile(
     r"^#{1,6}\s*\*{0,2}Q:\s*(?P<question>.+?)\*{0,2}\s*$\n+(?P<answer>.*?)(?=^#{1,6}\s|^-{3,}\s*$|\Z)",
     re.DOTALL | re.MULTILINE,
 )
+# "**Question:** ... **Answer:** ..." style (GAIL_Gas_PNG_Resident_FAQ.md)
+MD_QA_PATTERN = re.compile(
+    r"\*\*Question:\*\*\s*(?P<question>.+?)\s*\n+\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n\*\*Keywords:\*\*|\n-{3,}|\n##\s|\Z)",
+    re.DOTALL,
+)
+
+NOT_AVAILABLE_MESSAGE = (
+    "This information is not available in the current GAIL Gas PNG FAQ. "
+    "Please verify with GAIL Gas through the official portal."
+)
 
 SYSTEM_PROMPT = (
-    "You help society members with PNG (piped natural gas) connection applications. "
-    "Answer ONLY from the provided context. Be brief, use bullet points and simple steps. "
-    "Never ask for personal ID numbers. "
-    "If, and only if, the answer to the question is not present in the context, reply with "
-    f"EXACTLY this and nothing else: '{NO_ANSWER_MARKER} I don't know. Please contact the "
-    "society committee or the gas provider.'"
+    "You are a RAG assistant answering resident questions about GAIL Gas PNG (piped natural gas) "
+    "connections, using only the FAQ knowledge base provided as context. Follow these rules:\n"
+    "1. Use only information available in this knowledge base.\n"
+    "2. Provide short and direct answers.\n"
+    "3. Answer the specific question first.\n"
+    "4. Do not repeat unrelated registration details.\n"
+    "5. Provide the relevant official link only when required.\n"
+    "6. Do not invent GAIL Gas policies, charges or timelines.\n"
+    "7. If the requested information is not available, respond EXACTLY with this and nothing else: "
+    f"'{NO_ANSWER_MARKER} {NOT_AVAILABLE_MESSAGE}'\n"
+    "8. For payment-related questions, always remind residents to use the official GAIL Gas portal.\n"
+    "9. Never advise residents to make payments to an individual representative.\n"
+    "10. If multiple FAQs are relevant, combine only the minimum information needed to answer the "
+    "user's question.\n"
+    "Additionally, never ask residents for personal ID numbers."
 )
 
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
@@ -73,7 +94,7 @@ def read_docs():
     for path in glob.glob(os.path.join(DOCS_DIR, "*")):
         if path.lower().endswith(".pdf"):
             text = "\n".join(p.extract_text() or "" for p in PdfReader(path).pages)
-        elif path.lower().endswith(".txt"):
+        elif path.lower().endswith((".txt", ".md")):
             text = open(path, encoding="utf-8").read()
         else:
             continue
@@ -93,13 +114,16 @@ def chunk(text):
 
 
 def parse_faq_pairs(text):
-    pairs = []
-    for m in FAQ_QA_PATTERN.finditer(text):
-        question = m.group("question").strip()
-        answer = m.group("answer").strip()
-        if question and answer:
-            pairs.append((question, answer))
-    return pairs
+    for pattern in (MD_QA_PATTERN, FAQ_QA_PATTERN):
+        pairs = []
+        for m in pattern.finditer(text):
+            question = m.group("question").strip()
+            answer = m.group("answer").strip()
+            if question and answer:
+                pairs.append((question, answer))
+        if pairs:
+            return pairs
+    return []
 
 
 def embed(texts, task):
@@ -280,7 +304,6 @@ if question := st.chat_input("Ask about PNG application steps, documents, fees, 
             log_unanswered(question)
     except Exception:
         answer = "Sorry, the assistant is busy (free-tier limit). Please try again in a minute."
-    answer += "\n\n_Sources: " + ", ".join(sorted({s for _, s in hits})) + "_"
     st.chat_message("assistant").write(answer)
     st.session_state.messages.append({"role": "assistant", "content": answer})
 
