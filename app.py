@@ -1,5 +1,6 @@
 import csv
 import glob
+import json
 import os
 from datetime import datetime, timezone
 
@@ -21,6 +22,9 @@ UNANSWERED_LOG = os.path.join(DATA_DIR, "unanswered_questions.csv")
 UNANSWERED_FIELDS = ["timestamp", "question", "status", "answer", "answered_at"]
 ADMIN_ANSWERS_FILE = os.path.join(DOCS_DIR, "admin_added_answers.txt")
 NO_ANSWER_MARKER = "NO_ANSWER:"
+
+# ---- Usage stats (visits / questions asked) ----
+STATS_FILE = os.path.join(DATA_DIR, "stats.json")
 
 SYSTEM_PROMPT = (
     "You help society members with PNG (piped natural gas) connection applications. "
@@ -129,9 +133,29 @@ def append_faq_answer(question, answer):
         f.write(f"\n### Q: {question}\n{answer}\n")
 
 
-st.set_page_config(page_title="PNG Application Helper", page_icon="🔥")
+def read_stats():
+    if not os.path.isfile(STATS_FILE):
+        return {"visits": 0, "questions": 0}
+    with open(STATS_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def bump_stat(key):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    stats = read_stats()
+    stats[key] = stats.get(key, 0) + 1
+    with open(STATS_FILE, "w", encoding="utf-8") as f:
+        json.dump(stats, f)
+    return stats
+
+
+st.set_page_config(page_title="PNG Application Helper", page_icon="🔥", initial_sidebar_state="collapsed")
 st.title("🔥 PNG Application Helper")
 st.caption("Answers come from the society's PNG guidelines. Please confirm final details with the committee / gas provider.")
+
+if "visited" not in st.session_state:
+    st.session_state.visited = True
+    bump_stat("visits")
 
 chunks, sources, matrix = build_index()
 if matrix is None:
@@ -144,6 +168,7 @@ for m in st.session_state.messages:
     st.chat_message(m["role"]).write(m["content"])
 
 if question := st.chat_input("Ask about PNG application steps, documents, fees, forms..."):
+    bump_stat("questions")
     st.chat_message("user").write(question)
     st.session_state.messages.append({"role": "user", "content": question})
     hits = retrieve(question, chunks, sources, matrix)
@@ -214,3 +239,31 @@ with st.sidebar:
                 st.markdown(f"**{row['status'].title()}** — {row['question']}")
                 if row["answer"]:
                     st.caption(row["answer"])
+
+stats = read_stats()
+st.markdown(
+    f"""
+    <style>
+    .app-footer {{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 4px 20px;
+        background: rgba(14, 17, 23, 0.92);
+        border-top: 1px solid rgba(250, 250, 250, 0.15);
+        font-size: 0.75rem;
+        color: rgba(250, 250, 250, 0.6);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+    }}
+    </style>
+    <div class="app-footer">
+        <span>👀 Visits: {stats.get('visits', 0)} &nbsp;&nbsp;•&nbsp;&nbsp; 💬 Questions asked: {stats.get('questions', 0)}</span>
+        <span>Created by @DKB</span>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)

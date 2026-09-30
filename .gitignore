@@ -1,6 +1,7 @@
-.venv/
+# Any dotfolder (env/tooling/IDE configs, secrets, etc.)
+.*/
+
 __pycache__/
 *.pyc
-.streamlit/secrets.toml
 data/
 docs/admin_added_answers.txt
