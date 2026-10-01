@@ -1,316 +1,318 @@
 # GAIL Gas PNG Connection - Resident FAQ
 
-## FAQ-001: PNG Registration Link
+## FAQ-001: What is a GAIL Gas PNG connection?
 
-**Question:** Where can I register for a new GAIL Gas PNG connection?
+**Example questions:**
+- What is PNG?
+- What is this gas connection?
+- What is this?
 
-**Answer:** Residents can register for a new GAIL Gas PNG connection through the official GAIL Gas registration portal:
-
-https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
-
-**Keywords:** PNG registration, new connection, GAIL Gas registration, apply for gas connection, new PNG
+**Answer:** A GAIL Gas PNG connection supplies Piped Natural Gas directly to the registered flat through a pipeline and meter for domestic use. It is an alternative to using LPG cylinders for the registered premises.
 
 ---
 
-## FAQ-002: Registration Procedure Video
+## FAQ-002: Where can I register for a new PNG connection?
 
-**Question:** Is there a video explaining how to register for a PNG connection?
+**Example questions:**
+- How do I apply for PNG?
+- Where do I register?
+- Give me the registration link.
+
+**Answer:** Register through the official GAIL Gas customer registration portal:
+
+https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
+
+---
+
+## FAQ-003: Is there a video explaining the registration process?
+
+**Example questions:**
+- How do I fill the PNG registration form?
+- Is there a registration video?
+- Show me the registration procedure.
 
 **Answer:** Yes. The PNG registration procedure video is available here:
 
 https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
-**Keywords:** registration video, PNG procedure, registration help, how to register
-
 ---
 
-## FAQ-003: City or GA Selection
+## FAQ-004: What City / GA should I select?
 
-**Question:** What city or geographical area should I select during registration?
+**Example questions:**
+- Which city should I choose?
+- What does GA mean?
+- Which geographical area should I select?
 
 **Answer:** Select the applicable City / Geographical Area shown in the registration form. For apartments located in Bengaluru, select **Bengaluru GA**, where applicable.
 
-**Keywords:** city, GA, geographical area, Bengaluru GA, location
-
 ---
 
-## FAQ-004: Customer Type
+## FAQ-005: What Customer Type should I select?
 
-**Question:** What customer type should I select?
+**Example questions:**
+- Should I choose prepaid or postpaid?
+- What customer type is required?
 
 **Answer:** Select **Postpaid Connection** under Customer Type.
 
-**Keywords:** customer type, postpaid, postpaid connection
+---
+
+## FAQ-006: Whose name should be entered as the applicant?
+
+**Example questions:**
+- Which name should I use?
+- Can I register in my name?
+- Whose name goes on the connection?
+
+**Answer:** Enter the full name of the primary applicant, including surname, exactly as shown on the applicant's government-issued identity document.
 
 ---
 
-## FAQ-005: Applicant Name
+## FAQ-007: What contact information is required?
 
-**Question:** Whose name should be entered as the applicant?
+**Example questions:**
+- Which contact details are mandatory?
+- Do I need an email address?
+- Is an alternate mobile number mandatory?
 
-**Answer:** Enter the full name of the primary applicant, including surname, exactly as mentioned on the applicant's government-issued identity document.
-
-**Keywords:** applicant name, primary applicant, name on registration
-
----
-
-## FAQ-006: Mandatory Contact Information
-
-**Question:** What contact details are mandatory during registration?
-
-**Answer:** The following details are mandatory:
-
-- Full Name
-- Father's / Mother's / Husband's Name
-- Primary Mobile Number
-- Primary Email Address
-
-Alternate mobile number, additional email address and landline number are optional.
-
-**Keywords:** mandatory details, mobile number, email, contact information
+**Answer:** The mandatory details are Full Name, Father's / Mother's / Husband's Name, Primary Mobile Number and Primary Email Address. Alternate mobile number, additional email and landline number are optional.
 
 ---
 
-## FAQ-007: Apartment Address Details
+## FAQ-008: What apartment address details should I enter?
 
-**Question:** What address details should I enter?
+**Example questions:**
+- How should I enter my flat address?
+- What should I enter for apartment details?
+- Is block and flat number required?
 
-**Answer:** Enter the complete apartment address, including:
-
-- Type of House
-- Floor
-- Flat / House Number
-- Apartment / Society Name
-- Street / Area
-- PIN Code
-- Landmark
-
-Ensure that the **Block and Flat Number are entered correctly**.
-
-**Keywords:** address, flat number, block number, apartment name, society name, PIN code
+**Answer:** Enter the complete address, including Type of House, Floor, Flat / House Number, Apartment / Society Name, Street / Area, PIN Code and Landmark. Ensure that the **Block and Flat Number are correct**.
 
 ---
 
-## FAQ-008: Ownership Type
+## FAQ-009: What should I select under Type of Ownership?
 
-**Question:** What should I select under Type of Ownership?
+**Example questions:**
+- What should an owner select?
+- What should a tenant select?
+- Can a rented flat apply?
 
-**Answer:** Select:
-
-- **Owner** if you own the flat.
-- **Rented** if you are staying in the flat as a tenant.
-
-**Keywords:** ownership, owner, rented, tenant, type of ownership
+**Answer:** Select **Owner** if you own the flat. Select **Rented** if you are staying in the flat as a tenant.
 
 ---
 
-## FAQ-009: Existing LPG Connection
+## FAQ-010: What should I select for existing LPG connection?
 
-**Question:** What should I select for "Do You Have LPG Connection?"
+**Example questions:**
+- What should I select for "Do You Have LPG Connection?"
+- I have an Indane / HP / Bharat Gas cylinder. What should I choose?
 
 **Answer:** Select **YES** if you currently have an active LPG cylinder connection such as Indane, HP Gas or Bharat Gas. Select **NO** if you do not have an LPG connection.
 
-**Keywords:** LPG, cylinder connection, Indane, HP Gas, Bharat Gas
+---
+
+## FAQ-011: What is the Security Deposit and is it a connection fee?
+
+**Example questions:**
+- What is the Security Deposit?
+- What is SD?
+- Is this a connection fee?
+- What is the connection fee?
+- Fee?
+
+**Answer:** The Security Deposit (SD) is a **refundable deposit** collected as per GAIL Gas Terms and Conditions. It is **not an installation charge or a non-refundable connection fee**. Under the Standard Deposit option, Rs. 4,000 is collected as the refundable connection/security deposit and Rs. 500 as refundable payment security for gas consumption.
+
+Additional charges may apply for items such as extra piping, modification or other services beyond the standard installation, as per prevailing GAIL Gas rates.
 
 ---
 
-## FAQ-010: Security Deposit Meaning
+## FAQ-012: Is the Security Deposit refundable?
 
-**Question:** What is the GAIL Gas Security Deposit?
+**Example questions:**
+- Will I get the deposit back?
+- When is SD refunded?
+- What happens to my deposit if I surrender the connection?
 
-**Answer:** The Security Deposit, or SD, is a **refundable deposit** collected as per GAIL Gas Terms and Conditions. It is **not an installation charge or connection fee**.
-
-**Keywords:** security deposit, SD, refundable deposit, installation charge, connection fee
-
----
-
-## FAQ-011: Security Deposit Refund
-
-**Question:** Is the Security Deposit refundable?
-
-**Answer:** Yes. The Security Deposit is refundable when the PNG connection is permanently surrendered or terminated. Any outstanding dues, if applicable, may be adjusted before the refund is processed as per GAIL Gas policy.
-
-**Keywords:** refund, refundable deposit, surrender connection, terminate PNG
+**Answer:** Yes. The refundable Security Deposit is returned when the PNG connection is permanently surrendered or terminated, after adjustment of any outstanding dues, if applicable, as per GAIL Gas policy.
 
 ---
 
-## FAQ-012: Standard Deposit Option
+## FAQ-013: What is the Standard Deposit option?
 
-**Question:** What is the Standard Deposit payment option?
+**Example questions:**
+- How much do I pay under the standard plan?
+- What is the normal deposit amount?
 
 **Answer:** Under the Standard Deposit option:
 
-- Rs. 4,000 is collected as a refundable connection/security deposit.
-- Rs. 500 is collected as a refundable gas consumption deposit.
-
-**Keywords:** standard deposit, Rs. 4000 deposit, Rs. 500 deposit, security deposit
+- Rs. 4,000 refundable connection/security deposit
+- Rs. 500 refundable gas consumption/payment security deposit
 
 ---
 
-## FAQ-013: EDI or Instalment Option
+## FAQ-014: What is the EDI / Instalment option?
 
-**Question:** What is the EDI or instalment option?
+**Example questions:**
+- Can I pay the deposit in instalments?
+- What is EDI?
+- What does Rs. 5 per day mean?
 
-**Answer:** Under the EDI / Instalment option:
-
-- Rs. 5,000 is collected at Rs. 5 per day over 1,000 days.
-- An additional Rs. 500 gas consumption deposit is applicable.
-
-**Keywords:** EDI, instalment, Rs. 5 per day, 1000 days, installment payment
+**Answer:** Under the EDI / Instalment option, Rs. 5,000 is collected at Rs. 5 per day over 1,000 days. A separate Rs. 500 refundable gas consumption/payment security deposit is applicable.
 
 ---
 
-## FAQ-014: FLEXI Rental Scheme
+## FAQ-015: What is the FLEXI Rental Scheme?
 
-**Question:** What is the FLEXI Rental Scheme?
+**Example questions:**
+- Can I avoid paying the full security deposit upfront?
+- What is FLEXI?
+- Is the FLEXI amount refundable?
 
-**Answer:** Under the FLEXI Rental Scheme:
-
-- Rs. 100 plus GST is charged every two months instead of an upfront connection deposit.
-- A Rs. 500 gas consumption deposit is applicable.
-- The FLEXI rental amount is non-refundable.
-
-**Keywords:** FLEXI, rental scheme, Rs. 100 rental, bi-monthly, no upfront deposit
+**Answer:** The FLEXI scheme replaces the upfront refundable connection/security deposit with a recurring non-refundable rental charge. A Rs. 500 refundable gas consumption/payment security deposit is also applicable. The rental amount and applicable taxes should be checked on the GAIL Gas portal at the time of registration because scheme charges may be revised.
 
 ---
 
-## FAQ-015: Payment Portal
+## FAQ-016: Who should I pay the amount to?
 
-**Question:** Where should I pay the Security Deposit or other PNG charges?
+**Example questions:**
+- Who to pay amount?
+- Where should I pay the Security Deposit?
+- Can I pay the person who visits my flat?
+- Can I pay using UPI or QR code?
 
-**Answer:** Payments should be made only through the official GAIL Gas payment portal:
+**Answer:** Pay only through **GAIL Gas authorised channels**. For online payment, use the official GAIL Gas customer portal:
 
 https://customer.gailgaspng.com/online/billpay
 
-**Keywords:** payment link, security deposit payment, online payment, GAIL bill payment
+Do not pay cash or transfer money to an individual representative, personal bank account, personal UPI ID or QR code.
 
 ---
 
-## FAQ-016: Cash Payment
+## FAQ-017: How long does approval take after submitting the application?
 
-**Question:** Can I pay cash to a GAIL Gas representative?
+**Example questions:**
+- How long does it take to get the PNG connection approved after submitting?
+- How many days for approval?
+- When will my application be processed?
 
-**Answer:** No. Residents should not pay cash to any representative, transfer money to an individual's personal bank account, or pay through a personal UPI ID. Payments should be made only through the official GAIL Gas portal.
+**Answer:** GAIL Gas does **not specify a fixed number of days** for approval or processing in its published registration terms. After receiving the completed registration and applicable deposit, GAIL Gas starts the process of providing the connection. The time can vary depending on technical feasibility, whether the area is gasified, access to the premises and any required apartment/society or statutory permissions.
 
-**Keywords:** cash payment, representative, UPI, payment safety
-
----
-
-## FAQ-017: Proof of Identity
-
-**Question:** What documents can be used as Proof of Identity?
-
-**Answer:** Accepted identity documents may include:
-
-- Aadhaar Card
-- PAN Card
-- Voter ID
-- Passport
-- Driving Licence
-
-**Keywords:** identity proof, Aadhaar, PAN, Voter ID, Passport, Driving Licence
+For Bengaluru GA, applications may also depend on whether the location is in a gasified area.
 
 ---
 
-## FAQ-018: Proof of Ownership or Occupancy
+## FAQ-018: How many days after payment will the meter be installed?
 
-**Question:** What documents can be used as Proof of Ownership or Occupancy?
+**Example questions:**
+- How many days does GAIL Gas take to install the meter after payment?
+- When will the meter be installed?
+- I have paid. When will installation happen?
+- How long after payment for PNG activation?
 
-**Answer:** Supporting documents may include:
+**Answer:** GAIL Gas does **not publish a fixed installation period in days**. Its terms state that the company will make efforts to provide the PNG connection within a reasonable time, subject to access, technical feasibility and required permissions.
 
-- Sale Deed
-- Latest Electricity Bill
-- Property Tax Receipt
-- Rent Agreement
-- Society / Apartment Certificate, where applicable
-
-**Keywords:** ownership proof, sale deed, electricity bill, tax receipt, rent agreement
+Once the connection is ready for activation, GAIL Gas also provides a customer slot-booking facility. A representative may contact the customer and make best efforts to activate the connection on the scheduled date; if activation cannot be completed, the slot may be rescheduled in consultation with the customer.
 
 ---
 
-## FAQ-019: NOC Requirement
+## FAQ-019: Who should I contact for help or status updates?
 
-**Question:** Is an NOC required?
+**Example questions:**
+- Who to reach out?
+- Who can help me with my connection?
+- Whom should I contact for application status?
+- My installation is delayed. Who should I call?
 
-**Answer:** An NOC may be required for rented premises or for certain apartment or multi-storey building situations. Follow the document requirements shown during registration or verification.
+**Answer:** For registration, payment, application status or installation-related support, contact GAIL Gas through the official customer channels:
 
-**Keywords:** NOC, no objection certificate, tenant, rented flat
+- **Customer Care:** 1800-123-121111
+- **Email:** gailcgdhelpline@gail.co.in
+- **Customer Portal:** https://customer.gailgaspng.com/
 
----
-
-## FAQ-020: Supporting Document Size
-
-**Question:** What file formats and sizes are allowed for supporting documents?
-
-**Answer:** For identity proof, ownership proof and NOC:
-
-- Allowed formats: JPEG, JPG, PDF, PNG
-- Maximum file size: 2 MB per file
-
-**Keywords:** file size, document format, PDF, JPEG, PNG, upload limit
+If an apartment-level NOC or access permission is required, residents may also need to coordinate with their apartment association / RWA.
 
 ---
 
-## FAQ-021: Signature File Size
+## FAQ-020: What documents can be used as Proof of Identity?
 
-**Question:** What file format and size are allowed for the applicant signature?
+**Example questions:**
+- Which ID proof should I upload?
+- Can I use Aadhaar or PAN?
 
-**Answer:** For the applicant signature:
-
-- Allowed formats: JPEG, JPG, PNG
-- Maximum file size: 200 KB
-
-**Keywords:** signature, upload signature, 200 KB
+**Answer:** Accepted identity documents may include Aadhaar Card, PAN Card, Voter ID, Passport or Driving Licence.
 
 ---
 
-## FAQ-022: Submitting the Application
+## FAQ-021: What documents can be used as Proof of Ownership or Occupancy?
 
-**Question:** How do I submit the PNG registration form?
+**Example questions:**
+- Which property document should I upload?
+- What proof is needed for my flat?
+- What can a tenant upload?
 
-**Answer:** After completing the mandatory fields:
-
-1. Upload the required documents.
-2. Verify the entered information.
-3. Enter the CAPTCHA displayed on the screen.
-4. Click **Save**.
-
-Keep the application or registration reference number after submission.
-
-**Keywords:** submit registration, CAPTCHA, save application, application number
+**Answer:** Supporting documents may include Sale Deed, latest Electricity Bill, Property Tax Receipt, Rent Agreement or Society / Apartment Certificate, where applicable.
 
 ---
 
-## FAQ-023: After Registration
+## FAQ-022: Is an NOC required?
 
-**Question:** What happens after I complete PNG registration?
+**Example questions:**
+- Do I need an NOC from the apartment?
+- Does a tenant need NOC?
+- Is society permission required?
 
-**Answer:** After registration:
-
-- Complete the applicable Security Deposit payment.
-- Keep the payment acknowledgement.
-- Respond to any verification request from GAIL Gas.
-- Cooperate when flat-level installation and commissioning are scheduled.
-
-**Keywords:** after registration, next step, verification, installation, commissioning
+**Answer:** An NOC may be required for rented premises or where pipelines need to pass through common areas of a multi-storey apartment. Follow the document and permission requirements communicated during registration or verification.
 
 ---
 
-## FAQ-024: Information to Verify Before Submission
+## FAQ-023: What file formats and sizes are allowed for documents?
 
-**Question:** What should I check before submitting the application?
+**Example questions:**
+- What is the document upload size limit?
+- Can I upload a PDF?
+- Which file formats are accepted?
 
-**Answer:** Verify the following details carefully:
+**Answer:** For identity proof, ownership proof and NOC, allowed formats are JPEG, JPG, PDF and PNG, with a maximum file size of **2 MB per file**.
 
-- Applicant Name
-- Mobile Number
-- Email Address
-- Apartment Name
-- Block Number
-- Flat Number
-- Ownership Type
-- Uploaded documents
+---
 
-Incorrect information may delay verification or connection processing.
+## FAQ-024: What file format and size are allowed for the applicant signature?
 
-**Keywords:** verify application, wrong flat number, incorrect details, registration error
+**Example questions:**
+- What is the signature upload limit?
+- Can I upload signature as PDF?
+
+**Answer:** Applicant signature can be uploaded in JPEG, JPG or PNG format, with a maximum size of **200 KB**.
+
+---
+
+## FAQ-025: How do I submit the PNG registration form?
+
+**Example questions:**
+- How do I complete the application?
+- What do I do after filling the form?
+- Where do I click to submit?
+
+**Answer:** After completing all mandatory fields, upload the required documents, verify the information, enter the CAPTCHA and click **Save**. Keep the application or registration reference number after submission.
+
+---
+
+## FAQ-026: What happens after registration?
+
+**Example questions:**
+- What is the next step after registration?
+- What happens after I apply?
+- What happens after payment?
+
+**Answer:** After registration, complete the applicable deposit/payment, keep the acknowledgement, respond to any GAIL Gas verification request and cooperate when flat-level installation and commissioning are scheduled.
+
+---
+
+## FAQ-027: What should I verify before submitting the application?
+
+**Example questions:**
+- What should I check before submitting?
+- Can incorrect details delay my connection?
+
+**Answer:** Verify the Applicant Name, Mobile Number, Email Address, Apartment Name, Block Number, Flat Number, Ownership Type and uploaded documents. Incorrect information may delay verification or connection processing.

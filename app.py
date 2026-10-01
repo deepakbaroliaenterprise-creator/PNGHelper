@@ -36,6 +36,12 @@ MD_QA_PATTERN = re.compile(
     r"\*\*Question:\*\*\s*(?P<question>.+?)\s*\n+\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n\*\*Keywords:\*\*|\n-{3,}|\n##\s|\Z)",
     re.DOTALL,
 )
+NEW_MD_QA_PATTERN = re.compile(
+    r"^##\s+FAQ-\d+:\s*(?P<question>.+?)\s*$\n+"
+    r"\*\*Example questions:\*\*\s*\n(?P<examples>.*?)(?=\n+\*\*Answer:\*\*)\n+"
+    r"\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n+---\s*$|\Z)",
+    re.DOTALL | re.MULTILINE | re.IGNORECASE,
+)
 
 NOT_AVAILABLE_MESSAGE = (
     "This information is not available in the current GAIL Gas PNG FAQ. "
@@ -114,13 +120,23 @@ def chunk(text):
 
 
 def parse_faq_pairs(text):
+    pairs = []
+    for m in NEW_MD_QA_PATTERN.finditer(text):
+        question = m.group("question").strip()
+        examples = m.group("examples").strip()
+        answer = m.group("answer").strip()
+        if question and answer:
+            pairs.append((question, answer, f"{question}\n{examples}"))
+    if pairs:
+        return pairs
+
     for pattern in (MD_QA_PATTERN, FAQ_QA_PATTERN):
         pairs = []
         for m in pattern.finditer(text):
             question = m.group("question").strip()
             answer = m.group("answer").strip()
             if question and answer:
-                pairs.append((question, answer))
+                pairs.append((question, answer, question))
         if pairs:
             return pairs
     return []
@@ -145,8 +161,8 @@ def build_index():
     for name, text in read_docs():
         pairs = parse_faq_pairs(text)
         if pairs:
-            for question, answer in pairs:
-                chunks.append(f"Q: {question}\nA: {answer}")
+            for question, answer, searchable_question in pairs:
+                chunks.append(f"Q: {searchable_question}\nA: {answer}")
                 sources.append(name)
                 chunk_qa.append((question, answer))
         else:
