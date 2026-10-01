@@ -80,14 +80,17 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 ---
 
-## FAQ-008: What apartment address details should I enter?
+## FAQ-008: What should I select for Type of House and apartment address details?
 
 **Example questions:**
+- What should I select under Type of House?
+- Should apartment residents choose Independent or Multistorey?
+- I live in an apartment. Which house type should I select?
 - How should I enter my flat address?
 - What should I enter for apartment details?
 - Is block and flat number required?
 
-**Answer:** Enter the complete address, including Type of House, Floor, Flat / House Number, Apartment / Society Name, Street / Area, PIN Code and Landmark. Ensure that the **Block and Flat Number are correct**.
+**Answer:** For a flat in an apartment or multi-storey residential building, select **Multistorey** under **Type of House**. Then enter the complete address, including Floor, Flat / House Number, Apartment / Society Name, Street / Area, PIN Code and Landmark. Ensure that the **Block and Flat Number are correct**.
 
 ---
 
