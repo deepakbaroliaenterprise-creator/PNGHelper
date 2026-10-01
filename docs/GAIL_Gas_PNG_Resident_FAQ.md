@@ -316,3 +316,124 @@ If an apartment-level NOC or access permission is required, residents may also n
 - Can incorrect details delay my connection?
 
 **Answer:** Verify the Applicant Name, Mobile Number, Email Address, Apartment Name, Block Number, Flat Number, Ownership Type and uploaded documents. Incorrect information may delay verification or connection processing.
+
+---
+
+## FAQ-028: Do I need to surrender my LPG connection before applying for PNG?
+
+**Example questions:**
+- Do I need to withdraw my LPG connection first?
+- Can I apply for PNG while I still have LPG?
+- When should I surrender my LPG cylinder connection?
+
+**Answer:** No. You can apply for PNG first. If you have an LPG connection from a Government Oil Company, GAIL Gas terms require it to be surrendered within **60 days after obtaining the PNG connection**.
+
+---
+
+## FAQ-029: Will my LPG stove work with PNG?
+
+**Example questions:**
+- Do I need a new stove for PNG?
+- Will GAIL convert my LPG burner?
+- Is burner conversion included?
+
+**Answer:** The existing LPG stove/burner needs conversion for PNG. GAIL Gas provides conversion for the **first stove/appliance**; later conversions may be chargeable.
+
+---
+
+## FAQ-030: What happens if GAIL Gas cannot provide the connection?
+
+**Example questions:**
+- What if installation is not technically feasible?
+- What if society permission is not available?
+- Will I get my deposit back if connection cannot be given?
+
+**Answer:** If the connection cannot be provided because of technical feasibility, access or required permissions, the refundable Security Deposit can be refunded as per GAIL Gas terms.
+
+---
+
+## FAQ-031: Are extra pipeline lengths chargeable?
+
+**Example questions:**
+- Is extra pipe free?
+- Will I be charged if my kitchen is far from the meter?
+- What piping length is included?
+
+**Answer:** Extra material and labour charges apply when GI piping exceeds **10 metres before the meter** or tubing exceeds **5 metres after the meter**, at prevailing rates.
+
+---
+
+## FAQ-032: How often will I receive a PNG bill?
+
+**Example questions:**
+- Is PNG billed monthly?
+- How is my gas bill calculated?
+- What if the meter reading is missed?
+
+**Answer:** GAIL Gas raises **bi-monthly bills**, normally using the actual meter reading. If a reading cannot be taken, a provisional bill may be based on previous average consumption and adjusted later.
+
+---
+
+## FAQ-033: How long do I have to pay a PNG bill?
+
+**Example questions:**
+- What is the bill due period?
+- What happens if I pay late?
+- Is there a late payment charge?
+
+**Answer:** The bill should be paid within **21 days from the billing date**. Delayed payment charges may apply according to GAIL Gas terms.
+
+---
+
+## FAQ-034: What happens if I do not pay PNG bills?
+
+**Example questions:**
+- Can my gas be disconnected for non-payment?
+- What if I miss two bills?
+- How do I restore a disconnected connection?
+
+**Answer:** Failure to pay **two consecutive bills** can lead to disconnection. Supply is restored after outstanding dues and applicable reconnection charges are paid.
+
+---
+
+## FAQ-035: What happens during a PNG supply outage or maintenance shutdown?
+
+**Example questions:**
+- What if the gas pipeline is down?
+- Will we be informed about maintenance?
+- Can PNG supply stop temporarily?
+
+**Answer:** Planned maintenance shutdowns are communicated through the RWA or managing committee. For unforeseen interruptions, GAIL Gas states that it will make efforts to restore supply as early as possible.
+
+---
+
+## FAQ-036: Can I modify or relocate the PNG pipeline myself?
+
+**Example questions:**
+- Can my plumber move the gas pipe?
+- Can I shift the meter or gas line?
+- Who can modify the PNG installation?
+
+**Answer:** No. PNG equipment or pipelines should not be altered by unauthorized persons. Modifications must be handled through GAIL Gas and may involve applicable service charges.
+
+---
+
+## FAQ-037: Does the PNG rubber hose need replacement?
+
+**Example questions:**
+- How often should the gas hose be replaced?
+- What should I do if the PNG tube is damaged?
+- Is hose replacement required?
+
+**Answer:** The rubber hose should be replaced **annually**. If damage is noticed, stop PNG usage immediately and request replacement through GAIL Gas.
+
+---
+
+## FAQ-038: How do I permanently surrender my PNG connection?
+
+**Example questions:**
+- How do I close my PNG connection?
+- What happens to my deposit when I surrender PNG?
+- How can I terminate the gas connection?
+
+**Answer:** Submit a written surrender request. GAIL Gas will adjust final dues, take back its meter/fittings and process the refundable Security Deposit according to the applicable terms.
