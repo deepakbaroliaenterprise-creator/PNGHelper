@@ -44,13 +44,13 @@ NEW_MD_QA_PATTERN = re.compile(
 )
 
 NOT_AVAILABLE_MESSAGE = (
-    "This information is not available in the current GAIL Gas PNG FAQ. "
-    "Please verify with GAIL Gas through the official portal."
+    "This information is not available in the current documents. "
+    "Please verify the information through the relevant official channel."
 )
 
 SYSTEM_PROMPT = (
-    "You are a RAG assistant answering resident questions about GAIL Gas PNG (piped natural gas) "
-    "connections, using only the FAQ knowledge base provided as context. Follow these rules:\n"
+    "You are a RAG assistant answering questions using only the documents provided as context. "
+    "Follow these rules:\n"
     "1. Use only information available in this knowledge base.\n"
     "2. Provide short and direct answers.\n"
     "3. Answer the specific question first.\n"
@@ -97,7 +97,9 @@ def get_worksheets():
 
 def read_docs():
     texts = []
-    for path in glob.glob(os.path.join(DOCS_DIR, "*")):
+    for path in glob.glob(os.path.join(DOCS_DIR, "**"), recursive=True):
+        if not os.path.isfile(path):
+            continue
         if path.lower().endswith(".pdf"):
             text = "\n".join(p.extract_text() or "" for p in PdfReader(path).pages)
         elif path.lower().endswith((".txt", ".md")):
@@ -291,7 +293,7 @@ if top_qs:
 
 chunks, sources, chunk_qa, matrix = build_index()
 if matrix is None:
-    st.error("No documents found. Add PDF/TXT files to the 'docs' folder.")
+    st.error("No supported documents found. Add PDF, TXT or Markdown files to the 'docs' folder.")
     st.stop()
 
 if "messages" not in st.session_state:
