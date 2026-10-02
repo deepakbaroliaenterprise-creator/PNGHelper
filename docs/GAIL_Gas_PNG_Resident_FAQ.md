@@ -258,14 +258,18 @@ If an apartment-level NOC or access permission is required, residents may also n
 
 ---
 
-## FAQ-022: Is an NOC required?
+## FAQ-022: What is an NOC, and why is it required for a PNG connection?
 
 **Example questions:**
+- What is NOC?
+- Why do I need an NOC?
 - Do I need an NOC from the apartment?
 - Does a tenant need NOC?
 - Is society permission required?
 
-**Answer:** An NOC may be required for rented premises or where pipelines need to pass through common areas of a multi-storey apartment. Follow the document and permission requirements communicated during registration or verification.
+**Answer:** NOC stands for **No Objection Certificate**. It confirms that the property owner, apartment association / RWA, or other relevant authority has no objection to installation of the PNG connection.
+
+An NOC may be required for rented flats, multi-storey apartment buildings, or where permission is needed for common-area piping or installation work. The exact requirement depends on the property and the documents requested during registration or verification.
 
 ---
 
