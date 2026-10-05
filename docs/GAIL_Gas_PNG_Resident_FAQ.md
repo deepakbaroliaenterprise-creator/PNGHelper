@@ -258,22 +258,32 @@ If an apartment-level NOC or access permission is required, residents may also n
 
 ---
 
-## FAQ-022: What is an NOC, and why is it required for a PNG connection?
+## FAQ-022: What is an NOC and when is it required?
 
 **Example questions:**
 - What is NOC?
 - Why do I need an NOC?
-- Do I need an NOC from the apartment?
-- Does a tenant need NOC?
-- Is society permission required?
+- Does a tenant need an NOC?
+- Where should I get the NOC from?
+- I am not the flat owner. Do I need an NOC?
 
-**Answer:** NOC stands for **No Objection Certificate**. It confirms that the property owner, apartment association / RWA, or other relevant authority has no objection to installation of the PNG connection.
-
-An NOC may be required for rented flats, multi-storey apartment buildings, or where permission is needed for common-area piping or installation work. The exact requirement depends on the property and the documents requested during registration or verification.
+**Answer:** NOC stands for **No Objection Certificate**. It is mainly required when the PNG applicant is **not the owner of the flat**, such as a tenant. In such cases, the NOC should be obtained from the **flat owner**, confirming that they have no objection to the PNG connection being installed.
 
 ---
 
-## FAQ-023: What file formats and sizes are allowed for documents?
+## FAQ-023: What does “Others” mean in the registration form? Is it mandatory?
+
+**Example questions:**
+- What does Others mean in the form?
+- Is the Others field mandatory?
+- What should I enter under Others?
+- Can I leave Others blank?
+
+**Answer:** The **“Others”** field is **not mandatory**. It may appear depending on the options or information selected earlier in the registration form. If it is not applicable to you, it can be **left blank**.
+
+---
+
+## FAQ-024: What file formats and sizes are allowed for documents?
 
 **Example questions:**
 - What is the document upload size limit?
@@ -284,7 +294,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-024: What file format and size are allowed for the applicant signature?
+## FAQ-025: What file format and size are allowed for the applicant signature?
 
 **Example questions:**
 - What is the signature upload limit?
@@ -294,7 +304,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-025: How do I submit the PNG registration form?
+## FAQ-026: How do I submit the PNG registration form?
 
 **Example questions:**
 - How do I complete the application?
@@ -305,7 +315,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-026: What happens after registration?
+## FAQ-027: What happens after registration?
 
 **Example questions:**
 - What is the next step after registration?
@@ -316,7 +326,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-027: What should I verify before submitting the application?
+## FAQ-028: What should I verify before submitting the application?
 
 **Example questions:**
 - What should I check before submitting?
@@ -326,7 +336,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-028: Do I need to surrender my LPG connection before applying for PNG?
+## FAQ-029: Do I need to surrender my LPG connection before applying for PNG?
 
 **Example questions:**
 - Do I need to withdraw my LPG connection first?
@@ -337,7 +347,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-029: Will my LPG stove work with PNG?
+## FAQ-030: Will my LPG stove work with PNG?
 
 **Example questions:**
 - Do I need a new stove for PNG?
@@ -348,7 +358,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-030: What happens if GAIL Gas cannot provide the connection?
+## FAQ-031: What happens if GAIL Gas cannot provide the connection?
 
 **Example questions:**
 - What if installation is not technically feasible?
@@ -359,7 +369,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-031: Are extra pipeline lengths chargeable?
+## FAQ-032: Are extra pipeline lengths chargeable?
 
 **Example questions:**
 - Is extra pipe free?
@@ -370,7 +380,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-032: How often will I receive a PNG bill?
+## FAQ-033: How often will I receive a PNG bill?
 
 **Example questions:**
 - Is PNG billed monthly?
@@ -381,7 +391,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-033: How long do I have to pay a PNG bill?
+## FAQ-034: How long do I have to pay a PNG bill?
 
 **Example questions:**
 - What is the bill due period?
@@ -392,7 +402,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-034: What happens if I do not pay PNG bills?
+## FAQ-035: What happens if I do not pay PNG bills?
 
 **Example questions:**
 - Can my gas be disconnected for non-payment?
@@ -403,7 +413,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-035: What happens during a PNG supply outage or maintenance shutdown?
+## FAQ-036: What happens during a PNG supply outage or maintenance shutdown?
 
 **Example questions:**
 - What if the gas pipeline is down?
@@ -414,7 +424,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-036: Can I modify or relocate the PNG pipeline myself?
+## FAQ-037: Can I modify or relocate the PNG pipeline myself?
 
 **Example questions:**
 - Can my plumber move the gas pipe?
@@ -425,7 +435,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-037: Does the PNG rubber hose need replacement?
+## FAQ-038: Does the PNG rubber hose need replacement?
 
 **Example questions:**
 - How often should the gas hose be replaced?
@@ -436,7 +446,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 ---
 
-## FAQ-038: How do I permanently surrender my PNG connection?
+## FAQ-039: How do I permanently surrender my PNG connection?
 
 **Example questions:**
 - How do I close my PNG connection?
