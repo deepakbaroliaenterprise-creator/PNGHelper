@@ -548,15 +548,23 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 **Answer:** Contact GAIL Gas customer support with your registration reference and request the correction. Whether a submitted application can be edited online needs confirmation from GAIL Gas.
 
 **---**
-
-**## FAQ-043: What if my payment fails but the money is deducted?**
+**## FAQ-043: Will I be charged for PNG if my flat is vacant or there is no gas consumption?**
 
 **Example questions:**
-- Money was debited but the GAIL payment failed. What now?
-- My deposit payment is pending. Should I pay again?
-- How can I resolve a duplicate security deposit payment?
+- My flat is vacant for 3–4 months. Will I be charged?
+- There is no tenant in my flat. Do I need to pay a gas bill?
+- If there is no PNG usage, will my bill be zero?
+- Can I submit a zero meter reading?
+- Is there any monthly fixed charge if PNG is not used?
 
-**Answer:** Check the payment status on the official GAIL Gas customer portal. If the amount is debited but not reflected, contact GAIL Gas with the transaction reference and payment details. Avoid making a second payment until the first transaction status is confirmed.
+**Answer:** Under the **Standard Deposit plan**, there is **no fixed monthly usage charge**.
+
+- **Zero consumption = ₹0 gas usage charges**, provided the actual meter reading confirms no consumption.
+- If the flat remains vacant for 3–4 months, no gas consumption charges apply during that period.
+- Residents can submit an actual meter reading showing zero consumption through GAIL Gas's accepted channels.
+- If the meter is not read, a provisional bill may be generated and adjusted after the actual reading is verified.
+- Other applicable charges, if any, may still apply.
+- Under the **FLEXI/rental plan**, recurring rental charges may apply even without consumption.
 
 **---**
 
