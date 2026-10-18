@@ -682,3 +682,26 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 **Answer:** **Yes, in an area where PNG is unavailable**, subject to the applicable LPG rules and distributor procedures. Under the Government of India amendment dated **25 May 2026**, a domestic LPG customer who obtains PNG must **not book further LPG refills** for that household and must, within **30 days**, either **apply to terminate the LPG connection** or **obtain a Transfer Voucher** for future LPG restoration in a non-PNG area. Contact your LPG distributor (Indane, HP Gas or Bharat Gas) to obtain the voucher and confirm how to reactivate the connection if you move. Official source: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265063
 
 **---**
+
+**## FAQ-055: How much can I save by switching from LPG to PNG?**
+
+**Example questions:**
+- What is the price savings compared to LPG?
+- What is the savings?
+- What is the price difference between PNG and LPG?
+- Is PNG cheaper than LPG?
+- How much money can I save by using PNG?
+- Is PNG more economical than LPG cylinders?
+
+**Answer:** PNG and LPG have **similar estimated cooking costs** at the reference rates below. Savings depend on the latest tariff and actual consumption.
+
+- **LPG:** Rs. 944.50 for a domestic 14.2 kg cylinder in Bengaluru (October 2026 reference).
+- **PNG:** Rs. 55 per SCM (Bengaluru reference published as of 03 June 2026; verify the latest GAIL tariff).
+- **Approximate equivalent consumption:** 17–18 SCM of PNG for one 14.2 kg LPG cylinder (illustrative, not an exact appliance-to-appliance conversion).
+- **Estimated equivalent PNG cost:** Rs. 935–990 at Rs. 55 per SCM. This could be slightly cheaper or slightly more expensive than LPG, so **savings are not guaranteed**.
+
+PNG also avoids cylinder booking and replacement, subject to supply availability. Under the standard deposit plan, charges are primarily based on gas consumed; FLEXI rental or other applicable charges may differ.
+
+**References:** https://www.goodreturns.in/lpg-price-in-bangalore.html ; https://pngrb.gov.in/eng-web/png-cng-prices.html
+
+**---**
