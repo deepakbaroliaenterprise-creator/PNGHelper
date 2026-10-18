@@ -63,8 +63,9 @@ SYSTEM_PROMPT = (
     f"'{NO_ANSWER_MARKER} {NOT_AVAILABLE_MESSAGE}'\n"
     "8. For payment-related questions, direct residents to the official GAIL Gas portal or other authorised channels in context.\n"
     "9. Never advise residents to make payments to an individual representative.\n"
-    "10. For a multi-part question, combine only the relevant supported facts. If a missing detail or "
-    "ambiguity would change the answer, ask one concise clarification instead of guessing.\n"
+    "10. For a multi-part question, combine only the relevant supported facts. For a terse or elliptical "
+    "question, use the most relevant retrieved FAQ's question to resolve an omitted subject when it clearly "
+    "matches. Ask one concise clarification only when retrieved FAQs leave multiple plausible meanings.\n"
     "Additionally, never ask residents for personal ID numbers."
 )
 
@@ -186,7 +187,7 @@ def build_index():
         pairs = parse_faq_pairs(text)
         if pairs:
             for question, answer, searchable_question in pairs:
-                chunks.append(f"Question: {question}\nAnswer: {answer}")
+                chunks.append(f"Question and examples:\n{searchable_question}\nAnswer: {answer}")
                 sources.append(name)
                 chunk_qa.append((question, answer))
                 search_texts.append(f"Question and examples:\n{searchable_question}")
@@ -307,6 +308,15 @@ if matrix is None:
     st.error("No supported documents found. Add PDF, TXT or Markdown files to the 'docs' folder.")
     st.stop()
 
+current_faqs = {faq[0]: faq[1] for faq in chunk_qa if faq is not None}
+top_qs = top_questions(current_faqs)
+if top_qs:
+    st.subheader("📊 Most Asked Questions")
+    for i, row in enumerate(top_qs, start=1):
+        with st.expander(f"{i}. {row['question']}", expanded=False):
+            st.caption(row["answer"])
+    st.divider()
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if not st.session_state.messages:
@@ -346,15 +356,6 @@ if question := st.chat_input("Ask me about applying for PNG in your apartment...
         answer = "Sorry, the assistant is busy (free-tier limit). Please try again in a minute."
     st.chat_message("assistant").write(answer)
     st.session_state.messages.append({"role": "assistant", "content": answer})
-
-current_faqs = {faq[0]: faq[1] for faq in chunk_qa if faq is not None}
-top_qs = top_questions(current_faqs)
-if top_qs:
-    st.subheader("📊 Most Asked Questions")
-    for i, row in enumerate(top_qs, start=1):
-        with st.expander(f"{i}. {row['question']}", expanded=False):
-            st.caption(row["answer"])
-    st.divider()
 
 stats = read_stats()
 st.markdown(

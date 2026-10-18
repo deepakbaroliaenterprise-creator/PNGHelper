@@ -710,6 +710,7 @@ PNG also avoids cylinder booking and replacement, subject to supply availability
 
 **Example questions:**
 - Is PNG connection mandatory?
+- Is it mandatory?
 - Is it compulsory to switch from LPG to PNG?
 - Can I continue using LPG if PNG is available?
 - Do I have to register for PNG?
