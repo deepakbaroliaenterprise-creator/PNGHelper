@@ -38,9 +38,9 @@ MD_QA_PATTERN = re.compile(
     re.DOTALL,
 )
 NEW_MD_QA_PATTERN = re.compile(
-    r"^##\s+FAQ-\d+:\s*(?P<question>.+?)\s*$\n+"
+    r"^\*{0,2}##\s+FAQ-\d+:\s*(?P<question>.+?)\*{0,2}\s*$\n+"
     r"\*\*Example questions:\*\*\s*\n(?P<examples>.*?)(?=\n+\*\*Answer:\*\*)\n+"
-    r"\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n+---\s*$|\Z)",
+    r"\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n+\*{0,2}---\*{0,2}\s*$|\Z)",
     re.DOTALL | re.MULTILINE | re.IGNORECASE,
 )
 
