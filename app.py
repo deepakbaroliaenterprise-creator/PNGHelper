@@ -270,13 +270,20 @@ def bump_question_usage(question, answer):
     usage_ws.append_row([question, answer, 1], value_input_option="RAW")
 
 
-def top_questions(n=TOP_QUESTIONS_SHOWN):
+def top_questions(current_faqs, n=TOP_QUESTIONS_SHOWN):
     _, _, usage_ws = get_worksheets()
     values = usage_ws.get_all_values()
     if not values:
         return []
     header, *rows = values
-    records = [dict(zip(header, row)) for row in rows]
+    records = []
+    for row in rows:
+        record = dict(zip(header, row))
+        question = record.get("question", "")
+        if question not in current_faqs:
+            continue
+        record["answer"] = current_faqs[question]
+        records.append(record)
 
     def count_of(r):
         try:
@@ -340,7 +347,8 @@ if question := st.chat_input("Ask me about applying for PNG in your apartment...
     st.chat_message("assistant").write(answer)
     st.session_state.messages.append({"role": "assistant", "content": answer})
 
-top_qs = top_questions()
+current_faqs = {faq[0]: faq[1] for faq in chunk_qa if faq is not None}
+top_qs = top_questions(current_faqs)
 if top_qs:
     st.subheader("📊 Most Asked Questions")
     for i, row in enumerate(top_qs, start=1):
