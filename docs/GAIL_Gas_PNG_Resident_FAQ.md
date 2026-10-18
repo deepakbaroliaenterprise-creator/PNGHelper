@@ -2,7 +2,7 @@
 
 For Icon Happy Living Apartment, Kammasandra, Bengaluru.
 
-**Baseline:** 54 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-054. Updated 18 October 2026.
+**Baseline:** 56 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-056. Updated 18 October 2026.
 
 **## FAQ-001: What is a GAIL Gas PNG connection?**
 
@@ -703,5 +703,28 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 PNG also avoids cylinder booking and replacement, subject to supply availability. Under the standard deposit plan, charges are primarily based on gas consumed; FLEXI rental or other applicable charges may differ.
 
 **References:** https://www.goodreturns.in/lpg-price-in-bangalore.html ; https://pngrb.gov.in/eng-web/png-cng-prices.html
+
+**---**
+
+**## FAQ-056: Is GAIL Gas PNG registration mandatory for all residents?**
+
+**Example questions:**
+- Is PNG connection mandatory?
+- Is it compulsory to switch from LPG to PNG?
+- Can I continue using LPG if PNG is available?
+- Do I have to register for PNG?
+- What happens if I do not register for PNG?
+- Is PNG mandatory at Icon Happy Living Apartment?
+
+**Answer:** **Yes, where PNG supply is available to the premises, the Government of India's 2026 framework provides for transition from LPG to PNG, subject to the applicable official notice and procedures.**
+
+- Residents should apply for PNG when the authorised provider confirms that it can supply their premises and issues the applicable notice.
+- **Domestic LPG supply may cease after three months** under the applicable notification process if an eligible household does not obtain PNG.
+- If a PNG connection is not technically feasible, ask GAIL Gas about obtaining the necessary **No Objection Certificate (NOC)** to continue LPG supply.
+- At **Icon Happy Living Apartment**, residents are encouraged to register early to support the apartment-level infrastructure rollout; nearby pipeline availability alone does not establish that the three-month notice period has begun.
+
+**Important:** The three-month period depends on the official process, not simply the existence of a pipeline near the apartment. Confirm the applicability of any notice with GAIL Gas.
+
+**Reference:** Government of India, Natural Gas and Petroleum Products Distribution Order, 2026: https://www.mopng.gov.in/en/natural-gas/policies-guidelines
 
 **---**
