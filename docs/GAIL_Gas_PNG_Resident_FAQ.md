@@ -1,6 +1,10 @@
 # GAIL Gas PNG Connection - Resident FAQ
 
-## FAQ-001: What is a GAIL Gas PNG connection?
+For Icon Happy Living Apartment, Kammasandra, Bengaluru.
+
+**Baseline:** 54 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-054. Updated 18 October 2026.
+
+**## FAQ-001: What is a GAIL Gas PNG connection?**
 
 **Example questions:**
 - What is PNG?
@@ -9,9 +13,9 @@
 
 **Answer:** A GAIL Gas PNG connection supplies Piped Natural Gas directly to the registered flat through a pipeline and meter for domestic use. It is an alternative to using LPG cylinders for the registered premises.
 
----
+**---**
 
-## FAQ-002: Where can I register for a new PNG connection?
+**## FAQ-002: Where can I register for a new PNG connection?**
 
 **Example questions:**
 - How do I apply for PNG?
@@ -22,9 +26,9 @@
 
 https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
 
----
+**---**
 
-## FAQ-003: Is there a video explaining the registration process?
+**## FAQ-003: Is there a video explaining the registration process?**
 
 **Example questions:**
 - How do I fill the PNG registration form?
@@ -35,9 +39,9 @@ https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
 
 https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
----
+**---**
 
-## FAQ-004: What City / GA should I select?
+**## FAQ-004: What City / GA should I select?**
 
 **Example questions:**
 - Which city should I choose?
@@ -46,9 +50,9 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** Select the applicable City / Geographical Area shown in the registration form. For apartments located in Bengaluru, select **Bengaluru GA**, where applicable.
 
----
+**---**
 
-## FAQ-005: What Customer Type should I select?
+**## FAQ-005: What Customer Type should I select?**
 
 **Example questions:**
 - Should I choose prepaid or postpaid?
@@ -56,9 +60,9 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** Select **Postpaid Connection** under Customer Type.
 
----
+**---**
 
-## FAQ-006: Whose name should be entered as the applicant?
+**## FAQ-006: Whose name should be entered as the applicant?**
 
 **Example questions:**
 - Which name should I use?
@@ -67,9 +71,9 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** Enter the full name of the primary applicant, including surname, exactly as shown on the applicant's government-issued identity document.
 
----
+**---**
 
-## FAQ-007: What contact information is required?
+**## FAQ-007: What contact information is required?**
 
 **Example questions:**
 - Which contact details are mandatory?
@@ -78,9 +82,9 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** The mandatory details are Full Name, Father's / Mother's / Husband's Name, Primary Mobile Number and Primary Email Address. Alternate mobile number, additional email and landline number are optional.
 
----
+**---**
 
-## FAQ-008: What should I select for Type of House and apartment address details?
+**## FAQ-008: What should I select for Type of House and apartment address details?**
 
 **Example questions:**
 - What should I select under Type of House?
@@ -92,9 +96,9 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** For a flat in an apartment or multi-storey residential building, select **Multistorey** under **Type of House**. Then enter the complete address, including Floor, Flat / House Number, Apartment / Society Name, Street / Area, PIN Code and Landmark. Ensure that the **Block and Flat Number are correct**.
 
----
+**---**
 
-## FAQ-009: What should I select under Type of Ownership?
+**## FAQ-009: What should I select under Type of Ownership?**
 
 **Example questions:**
 - What should an owner select?
@@ -103,60 +107,34 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 
 **Answer:** Select **Owner** if you own the flat. Select **Rented** if you are staying in the flat as a tenant.
 
----
+**---**
 
-## FAQ-010: What should I select for existing LPG connection?
-
-**Example questions:**
-- What should I select for "Do You Have LPG Connection?"
-- I have an Indane / HP / Bharat Gas cylinder. What should I choose?
-
-**Answer:** Select **YES** if you currently have an active LPG cylinder connection such as Indane, HP Gas or Bharat Gas. Select **NO** if you do not have an LPG connection.
-
----
-
-## FAQ-011: What is the Security Deposit and is it a connection fee?
+**## FAQ-010: What should I select for an existing LPG connection when applying for PNG?**
 
 **Example questions:**
-- What is the Security Deposit?
-- What is SD?
-- Is this a connection fee?
-- What is the connection fee?
-- Fee?
+- Do I have LPG connection?
+- I have LPG at a different address. Should I select YES?
+- I own several flats but LPG is registered in only one.
+- How should I answer the LPG question for each flat?
 
-**Answer:** The Security Deposit (SD) is a **refundable deposit** collected as per GAIL Gas Terms and Conditions. It is **not an installation charge or a non-refundable connection fee**. Under the Standard Deposit option, Rs. 4,000 is collected as the refundable connection/security deposit and Rs. 500 as refundable payment security for gas consumption.
+**Answer:** Select **YES** only if an LPG connection exists for the **same flat/address** for which PNG is being registered. Select **NO** when LPG is registered at a different flat, address or city, or no LPG connection exists for that flat. For multiple flats, submit a separate PNG registration and LPG declaration for each flat. Example: LPG at Flat A → YES for Flat A; NO for Flat B if it has no LPG connection.
 
-Additional charges may apply for items such as extra piping, modification or other services beyond the standard installation, as per prevailing GAIL Gas rates.
+**---**
 
----
-
-## FAQ-012: Is the Security Deposit refundable?
+**## FAQ-011: What is the Standard Security Deposit, and is it refundable?**
 
 **Example questions:**
-- Will I get the deposit back?
-- When is SD refunded?
-- What happens to my deposit if I surrender the connection?
+- How much security deposit do I pay?
+- Is Rs. 4,500 an installation fee?
+- Will my deposit be refunded?
+- What does Standard Deposit include?
+- What happens to my deposit when I surrender PNG?
 
-**Answer:** Yes. The refundable Security Deposit is returned when the PNG connection is permanently surrendered or terminated, after adjustment of any outstanding dues, if applicable, as per GAIL Gas policy.
+**Answer:** Under the Standard Deposit option, pay **₹4,500 refundable security deposit**: **₹4,000 connection/security deposit** and **₹500 gas consumption/payment security**. This is **not an installation fee**. On permanent surrender/termination, the refundable amount is returned after adjusting outstanding dues, subject to GAIL Gas terms. Additional charges may apply for extra piping or services beyond standard installation.
 
----
+**---**
 
-## FAQ-013: What is the Standard Deposit option?
-
-**Example questions:**
-- How much do I pay under the standard plan?
-- What is the normal deposit amount?
-- What is the total amount under Standard Deposit?
-- Are both Standard Deposit amounts refundable?
-
-**Answer:** Under the Standard Deposit option:
-
-- Rs. 4,000 refundable connection/security deposit
-- Rs. 500 refundable gas consumption/payment security deposit
-
----
-
-## FAQ-014: What is the EDI / Instalment option?
+**## FAQ-012: What is the EDI / Instalment option?**
 
 **Example questions:**
 - Can I pay the deposit in instalments?
@@ -166,9 +144,9 @@ Additional charges may apply for items such as extra piping, modification or oth
 
 **Answer:** Under the EDI / Instalment option, Rs. 5,000 is collected at Rs. 5 per day over 1,000 days. A separate Rs. 500 refundable gas consumption/payment security deposit is applicable.
 
----
+**---**
 
-## FAQ-015: What is the FLEXI Rental Scheme?
+**## FAQ-013: What is the FLEXI Rental Scheme?**
 
 **Example questions:**
 - Can I avoid paying the full security deposit upfront?
@@ -177,9 +155,9 @@ Additional charges may apply for items such as extra piping, modification or oth
 
 **Answer:** The FLEXI scheme replaces the upfront refundable connection/security deposit with a recurring non-refundable rental charge. A Rs. 500 refundable gas consumption/payment security deposit is also applicable. The rental amount and applicable taxes should be checked on the GAIL Gas portal at the time of registration because scheme charges may be revised.
 
----
+**---**
 
-## FAQ-016: Who should I pay the amount to?
+**## FAQ-014: Who should I pay the amount to?**
 
 **Example questions:**
 - Who to pay amount?
@@ -193,9 +171,9 @@ https://customer.gailgaspng.com/online/billpay
 
 Do not pay cash or transfer money to an individual representative, personal bank account, personal UPI ID or QR code.
 
----
+**---**
 
-## FAQ-017: How long does approval take after submitting the application?
+**## FAQ-015: How long does approval take after submitting the application?**
 
 **Example questions:**
 - How long does it take to get the PNG connection approved after submitting?
@@ -206,9 +184,9 @@ Do not pay cash or transfer money to an individual representative, personal bank
 
 For Bengaluru GA, applications may also depend on whether the location is in a gasified area.
 
----
+**---**
 
-## FAQ-018: How many days after payment will the meter be installed?
+**## FAQ-016: How many days after payment will the meter be installed?**
 
 **Example questions:**
 - How many days does GAIL Gas take to install the meter after payment?
@@ -220,48 +198,33 @@ For Bengaluru GA, applications may also depend on whether the location is in a g
 
 Once the connection is ready for activation, GAIL Gas also provides a customer slot-booking facility. A representative may contact the customer and make best efforts to activate the connection on the scheduled date; if activation cannot be completed, the slot may be rescheduled in consultation with the customer.
 
----
+**---**
 
-## FAQ-019: Who should I contact for help or status updates?
-
-**Example questions:**
-- Who to reach out?
-- Who can help me with my connection?
-- Whom should I contact for application status?
-- My installation is delayed. Who should I call?
-
-**Answer:** For registration, payment, application status or installation-related support, contact GAIL Gas through the official customer channels:
-
-- **Customer Care:** 1800-123-121111
-- **Email:** gailcgdhelpline@gail.co.in
-- **Customer Portal:** https://customer.gailgaspng.com/
-
-If an apartment-level NOC or access permission is required, residents may also need to coordinate with their apartment association / RWA.
-
----
-
-## FAQ-020: What documents can be used as Proof of Identity?
+**## FAQ-017: Who can help with PNG registration, application/payment status, or installation?**
 
 **Example questions:**
-- Which ID proof should I upload?
-- Can I use Aadhaar or PAN?
+- Whom should I contact for PNG support?
+- How do I check my application status?
+- How do I confirm my deposit payment?
+- My PNG installation is delayed. Who can help?
 
-**Answer:** Accepted identity documents may include Aadhaar Card, PAN Card, Voter ID, Passport or Driving Licence.
+**Answer:** For registration, payment status, application status and installation support, use the **GAIL Gas customer portal** https://customer.gailgaspng.com/ or contact GAIL Gas customer support with your application reference or BP Number. The existing FAQ lists customer care at **1800-123-121111** and email **gailcgdhelpline@gail.co.in**; verify these contacts before chatbot publication. For apartment-level access permissions, coordinate with the apartment association.
 
----
+**---**
 
-## FAQ-021: What documents can be used as Proof of Ownership or Occupancy?
+**## FAQ-018: Which documents are accepted as identity and ownership/occupancy proof?**
 
 **Example questions:**
-- Which property document should I upload?
-- What proof is needed for my flat?
-- What can a tenant upload?
+- Can I use Aadhaar or PAN as ID?
+- Which proof should I upload for a flat?
+- Can a tenant upload a rent agreement?
+- What identity and address documents are needed?
 
-**Answer:** Supporting documents may include Sale Deed, latest Electricity Bill, Property Tax Receipt, Rent Agreement or Society / Apartment Certificate, where applicable.
+**Answer:** **Identity proof** may include Aadhaar Card, PAN Card, Voter ID, Passport or Driving Licence. **Ownership/occupancy proof** may include Sale Deed, recent Electricity Bill, Property Tax Receipt, Rent Agreement or Society/Apartment Certificate, where applicable. Upload the document types requested by the registration portal.
 
----
+**---**
 
-## FAQ-022: What is an NOC, and why is it required for a PNG connection?
+**## FAQ-019: What is an NOC, and why is it required for a PNG connection?**
 
 **Example questions:**
 - What is NOC?
@@ -274,30 +237,22 @@ If an apartment-level NOC or access permission is required, residents may also n
 
 An NOC may be required for rented flats, multi-storey apartment buildings, or where permission is needed for common-area piping or installation work. The exact requirement depends on the property and the documents requested during registration or verification.
 
----
+**---**
 
-## FAQ-023: What file formats and sizes are allowed for documents?
+**## FAQ-020: What file formats and sizes are allowed for documents and the applicant signature?**
 
 **Example questions:**
 - What is the document upload size limit?
-- Can I upload a PDF?
-- Which file formats are accepted?
+- Can I upload a PDF for identity proof or NOC?
+- Which file formats are accepted for documents?
+- What is the signature upload size limit?
+- Can I upload my signature as PDF?
 
-**Answer:** For identity proof, ownership proof and NOC, allowed formats are JPEG, JPG, PDF and PNG, with a maximum file size of **2 MB per file**.
+**Answer:** For identity proof, ownership proof and NOC, upload **JPEG, JPG, PDF or PNG** files, each up to **2 MB**. For the applicant signature, upload **JPEG, JPG or PNG** files up to **200 KB**; PDF is not accepted for the signature.
 
----
+**---**
 
-## FAQ-024: What file format and size are allowed for the applicant signature?
-
-**Example questions:**
-- What is the signature upload limit?
-- Can I upload signature as PDF?
-
-**Answer:** Applicant signature can be uploaded in JPEG, JPG or PNG format, with a maximum size of **200 KB**.
-
----
-
-## FAQ-025: How do I submit the PNG registration form?
+**## FAQ-021: How do I submit the PNG registration form?**
 
 **Example questions:**
 - How do I complete the application?
@@ -306,9 +261,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** After completing all mandatory fields, upload the required documents, verify the information, enter the CAPTCHA and click **Save**. Keep the application or registration reference number after submission.
 
----
+**---**
 
-## FAQ-026: What happens after registration?
+**## FAQ-022: What happens after registration?**
 
 **Example questions:**
 - What is the next step after registration?
@@ -317,9 +272,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** After registration, complete the applicable deposit/payment, keep the acknowledgement, respond to any GAIL Gas verification request and cooperate when flat-level installation and commissioning are scheduled.
 
----
+**---**
 
-## FAQ-027: What should I verify before submitting the application?
+**## FAQ-023: What should I verify before submitting the application?**
 
 **Example questions:**
 - What should I check before submitting?
@@ -327,20 +282,21 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** Verify the Applicant Name, Mobile Number, Email Address, Apartment Name, Block Number, Flat Number, Ownership Type and uploaded documents. Incorrect information may delay verification or connection processing.
 
----
+**---**
 
-## FAQ-028: Do I need to surrender my LPG connection before applying for PNG?
+**## FAQ-024: When must I surrender an LPG connection after taking PNG?**
 
 **Example questions:**
-- Do I need to withdraw my LPG connection first?
-- Can I apply for PNG while I still have LPG?
-- When should I surrender my LPG cylinder connection?
+- Can I register PNG while keeping LPG?
+- Do I need to surrender LPG at my hometown?
+- What if LPG and PNG are at the same flat?
+- When is LPG surrender required?
 
-**Answer:** No. You can apply for PNG first. If you have an LPG connection from a Government Oil Company, GAIL Gas terms require it to be surrendered within **60 days after obtaining the PNG connection**.
+**Answer:** You can apply for PNG before surrendering LPG. Under the Government of India amendment effective **25 May 2026**, a household that obtains PNG while holding domestic LPG must **stop booking LPG refills** and, within **30 days of obtaining PNG**, either **apply to terminate its LPG connection** or **obtain a Transfer Voucher** for future LPG restoration in a non-PNG area. An LPG connection for a genuinely different household/address should be assessed separately; confirm address-specific eligibility with the LPG distributor. **Note:** GAIL Gas online terms still mention 60 days, but the May 2026 government amendment specifies 30 days. Official source: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265063
 
----
+**---**
 
-## FAQ-029: Can I use my existing LPG stove with PNG, and who pays for the nozzles?
+**## FAQ-025: Can I use my existing LPG stove with PNG, and who pays for the nozzles?**
 
 **Example questions:**
 - Do I need to buy a new stove for PNG?
@@ -361,9 +317,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 - After conversion, the stove is configured for **PNG use** and **cannot be used with LPG as-is**.
 - If you later want to use the stove with LPG again, it must first be properly reconverted by a trained / authorized technician.
 
----
+**---**
 
-## FAQ-030: What happens if GAIL Gas cannot provide the connection?
+**## FAQ-026: What happens if GAIL Gas cannot provide the connection?**
 
 **Example questions:**
 - What if installation is not technically feasible?
@@ -372,9 +328,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** If the connection cannot be provided because of technical feasibility, access or required permissions, the refundable Security Deposit can be refunded as per GAIL Gas terms.
 
----
+**---**
 
-## FAQ-031: Are extra pipeline lengths chargeable?
+**## FAQ-027: Are extra pipeline lengths chargeable?**
 
 **Example questions:**
 - Is extra pipe free?
@@ -383,9 +339,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** Extra material and labour charges apply when GI piping exceeds **10 metres before the meter** or tubing exceeds **5 metres after the meter**, at prevailing rates.
 
----
+**---**
 
-## FAQ-032: How often will I receive a PNG bill?
+**## FAQ-028: How often will I receive a PNG bill?**
 
 **Example questions:**
 - Is PNG billed monthly?
@@ -394,9 +350,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** GAIL Gas raises **bi-monthly bills**, normally using the actual meter reading. If a reading cannot be taken, a provisional bill may be based on previous average consumption and adjusted later.
 
----
+**---**
 
-## FAQ-033: How long do I have to pay a PNG bill?
+**## FAQ-029: How long do I have to pay a PNG bill?**
 
 **Example questions:**
 - What is the bill due period?
@@ -405,9 +361,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** The bill should be paid within **21 days from the billing date**. Delayed payment charges may apply according to GAIL Gas terms.
 
----
+**---**
 
-## FAQ-034: What happens if I do not pay PNG bills?
+**## FAQ-030: What happens if I do not pay PNG bills?**
 
 **Example questions:**
 - Can my gas be disconnected for non-payment?
@@ -416,9 +372,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** Failure to pay **two consecutive bills** can lead to disconnection. Supply is restored after outstanding dues and applicable reconnection charges are paid.
 
----
+**---**
 
-## FAQ-035: What happens during a PNG supply outage or maintenance shutdown?
+**## FAQ-031: What happens during a PNG supply outage or maintenance shutdown?**
 
 **Example questions:**
 - What if the gas pipeline is down?
@@ -427,9 +383,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** Planned maintenance shutdowns are communicated through the RWA or managing committee. For unforeseen interruptions, GAIL Gas states that it will make efforts to restore supply as early as possible.
 
----
+**---**
 
-## FAQ-036: Can I modify or relocate the PNG pipeline myself?
+**## FAQ-032: Can I modify or relocate the PNG pipeline myself?**
 
 **Example questions:**
 - Can my plumber move the gas pipe?
@@ -438,9 +394,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** No. PNG equipment or pipelines should not be altered by unauthorized persons. Modifications must be handled through GAIL Gas and may involve applicable service charges.
 
----
+**---**
 
-## FAQ-037: Does the PNG rubber hose need replacement?
+**## FAQ-033: Does the PNG rubber hose need replacement?**
 
 **Example questions:**
 - How often should the gas hose be replaced?
@@ -449,9 +405,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** The rubber hose should be replaced **annually**. If damage is noticed, stop PNG usage immediately and request replacement through GAIL Gas.
 
----
+**---**
 
-## FAQ-038: How do I permanently surrender my PNG connection?
+**## FAQ-034: How do I permanently surrender my PNG connection?**
 
 **Example questions:**
 - How do I close my PNG connection?
@@ -460,29 +416,9 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **Answer:** Submit a written surrender request. GAIL Gas will adjust final dues, take back its meter/fittings and process the refundable Security Deposit according to the applicable terms.
 
----
+**---**
 
-## FAQ-039: I have an LPG connection in a different city. Do I need to surrender it?
-
-**Example questions:**
-- I have LPG at my hometown. Do I need to surrender it?
-- My LPG connection is in another city. Can I keep it?
-- I have PNG here and LPG at a different address. Is that allowed?
-- Do I need to surrender an LPG connection that is not at this apartment?
-
-**Answer:** No, if your LPG connection is for a **different residential address / location**, you do not need to surrender it just because you are taking a PNG connection at this apartment.
-
-The surrender requirement is relevant when the LPG and PNG connections are for the **same name and same household / premises**. In such cases, you may start receiving notices to surrender the LPG connection after PNG is activated.
-
-Government guidance encourages customers who no longer need LPG cylinders at the same premises to surrender them so that the cylinders and related infrastructure can be better utilized.
-
-**Simple rule:**
-- **LPG at a different city / address:** You can keep it.
-- **LPG and PNG at the same household / premises:** Surrender requirements may apply.
-
----
-
-## FAQ-040: Can I keep a backup stove for use during a PNG outage?
+**## FAQ-035: Can I keep a backup stove for use during a PNG outage?**
 
 **Example questions:**
 - Can I keep a backup stove?
@@ -497,9 +433,9 @@ Government guidance encourages customers who no longer need LPG cylinders at the
 
 If the backup stove is intended to use LPG, the LPG connection rules applicable to the same household / premises must also be followed.
 
----
+**---**
 
-## FAQ-041: How long will it take to get the PNG connection at Icon Happy Living Apartment, Kammasandra?
+**## FAQ-036: How long will it take to get the PNG connection at Icon Happy Living Apartment, Kammasandra?**
 
 **Example questions:**
 - When will PNG start in Icon Happy Living?
@@ -516,9 +452,9 @@ Icon Happy Living has already made **good progress with resident registrations**
 
 If you have not registered yet, please complete your PNG registration at the earliest. Higher participation will help strengthen the case for faster infrastructure rollout in the apartment.
 
----
+**---**
 
-## FAQ-042: What are the PNG usage charges?
+**## FAQ-037: What are the PNG usage charges?**
 
 **Example questions:**
 - What is the PNG rate?
@@ -535,9 +471,9 @@ For Bengaluru Rural / Urban, the latest PNGRB-published record available in the 
 
 **Reference:** https://pngrb.gov.in/eng-web/png-cng-prices.html
 
----
+**---**
 
-## FAQ-043: Is there any monthly fixed charge for PNG?
+**## FAQ-038: Is there any monthly fixed charge for PNG?**
 
 **Example questions:**
 - Is there a monthly fee?
@@ -555,9 +491,9 @@ If you select a **FLEXI / rental payment plan**, a recurring rental charge may a
 
 **Simple rule:** Standard / deposit plan -> mainly pay for actual gas used. FLEXI / rental plan -> usage charges plus the applicable recurring rental under that plan.
 
----
+**---**
 
-## FAQ-044: What is a BP Number?
+**## FAQ-039: What is a BP Number?**
 
 **Example questions:**
 - What does BP No. mean?
@@ -569,6 +505,7 @@ If you select a **FLEXI / rental payment plan**, a recurring rental charge may a
 **Answer:** **BP Number** means **Business Partner Number**. It is the unique customer / account number assigned by GAIL Gas to identify your PNG account after your registration or connection is processed.
 
 The BP Number may be required for:
+
 - Viewing or paying bills
 - Customer portal login
 - Gas-in / activation slot booking
@@ -577,4 +514,171 @@ The BP Number may be required for:
 
 Keep the BP Number safely for future PNG-related transactions and service requests.
 
----
+**---**
+
+**## FAQ-040: Can one person apply for PNG connections for multiple flats in the same apartment?**
+
+**Example questions:**
+- I own two flats. Can I get PNG for both?
+- How many PNG connections can one owner have?
+- Can I apply for several flats under my name?
+
+**Answer:** Yes. One person can request separate PNG connections for different flats in the same apartment. A **separate registration form is required for each flat**, with the correct flat/address details. Each connection is processed separately according to GAIL Gas requirements.
+
+**---**
+
+**## FAQ-041: What should I do if I smell gas, and what is the emergency number?**
+
+**Example questions:**
+- I smell gas in the kitchen. What should I do?
+- What is the PNG gas leak emergency number?
+- Who should I call for a gas leak in Bengaluru?
+
+**Answer:** If you suspect a gas leak, close the gas valve **only if safe**, open windows/doors, do not use flames or operate electrical switches, and move to safety. Call GAIL Gas emergency support **from a safe location**. The previously listed Bengaluru emergency number is **1800-102-9282**; verify it against current official GAIL Gas materials before deployment. In case of fire, call emergency services.
+
+**---**
+
+**## FAQ-042: Can I correct details after submitting my PNG registration?**
+
+**Example questions:**
+- I entered the wrong flat number. Can it be corrected?
+- How do I change my name on the submitted application?
+- Can I edit a saved PNG registration form?
+
+**Answer:** Contact GAIL Gas customer support with your registration reference and request the correction. Whether a submitted application can be edited online needs confirmation from GAIL Gas.
+
+**---**
+
+**## FAQ-043: What if my payment fails but the money is deducted?**
+
+**Example questions:**
+- Money was debited but the GAIL payment failed. What now?
+- My deposit payment is pending. Should I pay again?
+- How can I resolve a duplicate security deposit payment?
+
+**Answer:** Check the payment status on the official GAIL Gas customer portal. If the amount is debited but not reflected, contact GAIL Gas with the transaction reference and payment details. Avoid making a second payment until the first transaction status is confirmed.
+
+**---**
+
+**## FAQ-044: Can a tenant apply for a PNG connection in their own name?**
+
+**Example questions:**
+- Can a renter register for PNG?
+- Does the owner have to apply for the gas connection?
+- Can I get PNG if I am living in a rented flat?
+
+**Answer:** A tenant may apply subject to GAIL Gas eligibility and document requirements. Obtain an **NOC from the flat owner** when required and provide the requested occupancy documents.
+
+**---**
+
+**## FAQ-045: What happens to the PNG connection when a tenant vacates the flat?**
+
+**Example questions:**
+- I am moving out of my rented flat. What happens to PNG?
+- Can the next tenant use the same gas connection?
+- Should a tenant close the PNG account when moving out?
+
+**Answer:** The current account holder should contact GAIL Gas to ask about account transfer, change of name or closure, as appropriate. The required process and any charges should be confirmed with GAIL Gas.
+
+**---**
+
+**## FAQ-046: Can a PNG connection be transferred to a new flat owner?**
+
+**Example questions:**
+- I sold my flat. Can the PNG account be transferred?
+- How do I change the name on the gas account?
+- Can the buyer take over my existing PNG connection?
+
+**Answer:** Contact GAIL Gas to request a change of account holder or name transfer. GAIL Gas will confirm the required documents, outstanding dues and any applicable charges.
+
+**---**
+
+**## FAQ-047: What should I do if my PNG bill or meter reading is incorrect?**
+
+**Example questions:**
+- My PNG bill is unusually high. What can I do?
+- GAIL has used the wrong meter reading. How do I complain?
+- How do I dispute a gas bill?
+
+**Answer:** Compare the bill with your meter reading and previous consumption. Contact GAIL Gas with your **BP Number**, meter details and a copy of the bill to request verification or correction.
+
+**---**
+
+**## FAQ-048: Can I submit my own meter reading?**
+
+**Example questions:**
+- The meter reader did not visit. Can I send my reading?
+- Can residents send PNG meter readings by email?
+- How can I avoid an estimated gas bill?
+
+**Answer:** GAIL Gas terms referenced in the earlier review permit customers to submit actual meter readings within a specified period after the billing cycle. Confirm the current submission window, email address and required details directly with GAIL Gas before sending your reading.
+
+**---**
+
+**## FAQ-049: What should I do before leaving my flat vacant for several months?**
+
+**Example questions:**
+- I will be away for three months. Should I close the gas valve?
+- How do I keep PNG safe while my flat is empty?
+- Does a vacant flat need gas disconnection?
+
+**Answer:** Turn off the gas appliance valve before leaving and follow GAIL Gas instructions for isolating the supply during an extended absence. Do not tamper with the meter or pipeline. Under the standard deposit plan, **no gas consumption means no consumption charge**, subject to any other applicable charges.
+
+**---**
+
+**## FAQ-050: Can I choose my PNG installation or activation date?**
+
+**Example questions:**
+- Can I book a gas installation appointment?
+- Does GAIL provide an activation slot?
+- Can I schedule PNG commissioning when I am home?
+
+**Answer:** GAIL Gas provides a slot-booking facility for eligible activation requests. Available dates depend on installation readiness and confirmation by GAIL Gas. A preferred date is not guaranteed.
+
+**---**
+
+**## FAQ-051: Who must provide access for PNG installation in my flat?**
+
+**Example questions:**
+- Do I need to be present during installation?
+- Will GAIL install if my flat is locked?
+- Who provides access for the pipeline and meter?
+
+**Answer:** The customer must arrange access to the flat and agreed installation areas when GAIL Gas schedules the work. Common-area permissions or access may require coordination with the apartment association.
+
+**---**
+
+**## FAQ-052: What should I do if my stove does not work after PNG activation?**
+
+**Example questions:**
+- My stove has no flame after PNG activation. What should I do?
+- Why is the PNG flame weak after conversion?
+- Who can check a stove that is not working on PNG?
+
+**Answer:** Confirm that GAIL Gas has activated the connection and contact authorized GAIL Gas support to check the supply and stove conversion. Do not attempt to adjust gas nozzles, regulators or pipeline fittings yourself.
+
+**---**
+
+**## FAQ-053: Can domestic PNG be used for purposes other than cooking?**
+
+**Example questions:**
+- Can I run a gas geyser on PNG?
+- Is PNG allowed for water heating?
+- Can domestic PNG supply a generator?
+
+**Answer:** Domestic PNG is intended for approved domestic uses at the registered premises. Any additional appliance or use must be assessed and approved by GAIL Gas for technical feasibility, safety and applicable charges. Do not connect extra equipment without authorization.
+
+**---**
+
+**## FAQ-054: Can I get an LPG connection again in the future after switching to PNG?**
+
+**Example questions:**
+- Can I book LPG cylinders again in the future?
+- Can I get my LPG connection back after switching to PNG?
+- Can I restart LPG if I move somewhere without PNG?
+- Can I keep my LPG connection for future use?
+- What is an LPG Transfer Voucher?
+
+**Answer:** **Yes, in an area where PNG is unavailable**, subject to the applicable LPG rules and distributor procedures. Under the Government of India amendment dated **25 May 2026**, a domestic LPG customer who obtains PNG must **not book further LPG refills** for that household and must, within **30 days**, either **apply to terminate the LPG connection** or **obtain a Transfer Voucher** for future LPG restoration in a non-PNG area. Contact your LPG distributor (Indane, HP Gas or Bharat Gas) to obtain the voucher and confirm how to reactivate the connection if you move. Official source: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265063
+
+**---**
