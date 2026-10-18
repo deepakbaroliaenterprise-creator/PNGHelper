@@ -146,6 +146,8 @@ Additional charges may apply for items such as extra piping, modification or oth
 **Example questions:**
 - How much do I pay under the standard plan?
 - What is the normal deposit amount?
+- What is the total amount under Standard Deposit?
+- Are both Standard Deposit amounts refundable?
 
 **Answer:** Under the Standard Deposit option:
 
@@ -160,6 +162,7 @@ Additional charges may apply for items such as extra piping, modification or oth
 - Can I pay the deposit in instalments?
 - What is EDI?
 - What does Rs. 5 per day mean?
+- How much is collected through EDI, and for how long?
 
 **Answer:** Under the EDI / Instalment option, Rs. 5,000 is collected at Rs. 5 per day over 1,000 days. A separate Rs. 500 refundable gas consumption/payment security deposit is applicable.
 
@@ -523,6 +526,8 @@ If you have not registered yet, please complete your PNG registration at the ear
 - What is the charge per unit or per SCM?
 - How much does GAIL Gas charge for usage?
 - How is my PNG bill calculated?
+- What is the current price per SCM in Bengaluru?
+- How much do I pay for each SCM of gas?
 
 **Answer:** PNG is billed based on the **actual gas consumed**, measured in **Standard Cubic Metres (SCM)**. The applicable domestic PNG tariff can change from time to time, so the bill is calculated using the prevailing GAIL Gas rate for the area.
 
@@ -541,6 +546,8 @@ For Bengaluru Rural / Urban, the latest PNGRB-published record available in the 
 - What if I do not use PNG for a month?
 - Is there a minimum monthly bill?
 - Do I only pay for what I use?
+- Do I pay a fixed charge or only for the gas I use?
+- Will I be charged for a month with no gas consumption?
 
 **Answer:** For the normal deposit-based PNG connection, there is **no separate fixed monthly consumption charge**. You pay for the gas you actually consume, based on the meter reading and the applicable tariff.
 
