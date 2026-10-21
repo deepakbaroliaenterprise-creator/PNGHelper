@@ -2,7 +2,7 @@
 
 For Icon Happy Living Apartment, Kammasandra, Bengaluru.
 
-**Baseline:** 56 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-056. Updated 18 October 2026.
+**Baseline:** 57 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-057. Updated 21 October 2026.
 
 **## FAQ-001: What is a GAIL Gas PNG connection?**
 
@@ -374,14 +374,21 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **---**
 
-**## FAQ-031: What happens during a PNG supply outage or maintenance shutdown?**
+**## FAQ-031: What happens if the PNG pipeline leaks, is damaged, or requires maintenance?**
 
 **Example questions:**
 - What if the gas pipeline is down?
+- What happens if the main PNG pipeline leaks?
+- Will the entire apartment lose gas supply?
+- How will GAIL supply gas while the pipeline is repaired?
 - Will we be informed about maintenance?
-- Can PNG supply stop temporarily?
+- How long will it take to restore PNG supply?
 
-**Answer:** Planned maintenance shutdowns are communicated through the RWA or managing committee. For unforeseen interruptions, GAIL Gas states that it will make efforts to restore supply as early as possible.
+**Answer:** If a gas pipeline is damaged or leaking, GAIL Gas may **isolate the affected section and temporarily stop supply** to the affected flats or area for safety. Authorised personnel will inspect and repair the pipeline and restore supply after safety checks. An alternative pipeline route may be used **only if technically available; continuous supply is not guaranteed**. Planned shutdowns are generally communicated through available GAIL Gas/apartment association channels. There is no guaranteed restoration time.
+
+**Important:** If you smell gas, do not operate electrical switches or use flames; move to safety and contact the GAIL Gas emergency helpline. See FAQ-041 for emergency precautions.
+
+**Reference:** https://www.gailonline.com/pdf/About/CitizenCharter_GAIL_08_01_2024.pdf
 
 **---**
 
@@ -473,23 +480,19 @@ For Bengaluru Rural / Urban, the latest PNGRB-published record available in the 
 
 **---**
 
-**## FAQ-038: Is there any monthly fixed charge for PNG?**
+**## FAQ-038: Will I be charged for PNG if my flat is vacant or there is no gas consumption?**
 
 **Example questions:**
-- Is there a monthly fee?
-- Is there a fixed monthly charge?
-- Do I have to pay every month even if I do not use gas?
-- What if I do not use PNG for a month?
-- Is there a minimum monthly bill?
-- Do I only pay for what I use?
-- Do I pay a fixed charge or only for the gas I use?
-- Will I be charged for a month with no gas consumption?
+- Is there any monthly fixed charge for PNG?
+- My flat is vacant for 3–4 months. Will I be charged?
+- There is no tenant in my flat. Will I receive a bill?
+- If there is no PNG usage, will the bill be zero?
+- Can I submit a zero meter reading?
+- Do I pay rent when no gas is used?
 
-**Answer:** For the normal deposit-based PNG connection, there is **no separate fixed monthly consumption charge**. You pay for the gas you actually consume, based on the meter reading and the applicable tariff.
+**Answer:** Under the **Standard Deposit plan**, there is no separate fixed monthly gas consumption charge. If the meter confirms **zero consumption**, the **gas usage charge is ₹0**, including when a flat is vacant for 3–4 months. Submit a genuine meter reading through GAIL Gas's accepted process if needed. If the meter cannot be read, a provisional bill may be raised and later adjusted against the actual reading. **Other applicable charges, if any, may still apply**. Under the **FLEXI/rental plan**, recurring rental charges may apply even without gas usage.
 
-If you select a **FLEXI / rental payment plan**, a recurring rental charge may apply under that plan even when gas consumption is low or nil. Always check the payment plan selected during registration for the latest applicable terms.
-
-**Simple rule:** Standard / deposit plan -> mainly pay for actual gas used. FLEXI / rental plan -> usage charges plus the applicable recurring rental under that plan.
+**Important:** A vacant flat does not automatically guarantee a zero total bill; verify the meter reading and payment plan.
 
 **---**
 
@@ -548,23 +551,15 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 **Answer:** Contact GAIL Gas customer support with your registration reference and request the correction. Whether a submitted application can be edited online needs confirmation from GAIL Gas.
 
 **---**
-**## FAQ-043: Will I be charged for PNG if my flat is vacant or there is no gas consumption?**
+
+**## FAQ-043: What if my payment fails but the money is deducted?**
 
 **Example questions:**
-- My flat is vacant for 3–4 months. Will I be charged?
-- There is no tenant in my flat. Do I need to pay a gas bill?
-- If there is no PNG usage, will my bill be zero?
-- Can I submit a zero meter reading?
-- Is there any monthly fixed charge if PNG is not used?
+- Money was debited but the GAIL payment failed. What now?
+- My deposit payment is pending. Should I pay again?
+- How can I resolve a duplicate security deposit payment?
 
-**Answer:** Under the **Standard Deposit plan**, there is **no fixed monthly usage charge**.
-
-- **Zero consumption = ₹0 gas usage charges**, provided the actual meter reading confirms no consumption.
-- If the flat remains vacant for 3–4 months, no gas consumption charges apply during that period.
-- Residents can submit an actual meter reading showing zero consumption through GAIL Gas's accepted channels.
-- If the meter is not read, a provisional bill may be generated and adjusted after the actual reading is verified.
-- Other applicable charges, if any, may still apply.
-- Under the **FLEXI/rental plan**, recurring rental charges may apply even without consumption.
+**Answer:** Check the payment status on the official GAIL Gas customer portal. If the amount is debited but not reflected, contact GAIL Gas with the transaction reference and payment details. Avoid making a second payment until the first transaction status is confirmed.
 
 **---**
 
@@ -718,7 +713,6 @@ PNG also avoids cylinder booking and replacement, subject to supply availability
 
 **Example questions:**
 - Is PNG connection mandatory?
-- Is it mandatory?
 - Is it compulsory to switch from LPG to PNG?
 - Can I continue using LPG if PNG is available?
 - Do I have to register for PNG?
@@ -735,5 +729,21 @@ PNG also avoids cylinder booking and replacement, subject to supply availability
 **Important:** The three-month period depends on the official process, not simply the existence of a pipeline near the apartment. Confirm the applicability of any notice with GAIL Gas.
 
 **Reference:** Government of India, Natural Gas and Petroleum Products Distribution Order, 2026: https://www.mopng.gov.in/en/natural-gas/policies-guidelines
+
+**---**
+
+
+**## FAQ-057: What happens to domestic PNG supply if there is another gas shortage or energy crisis?**
+
+**Example questions:**
+- What happens if another gas crisis occurs?
+- Will PNG supply stop during a natural gas shortage?
+- Will domestic PNG customers get priority?
+- Is PNG supply guaranteed during international conflicts?
+- What happens if India faces another gas supply disruption?
+
+**Answer:** **Domestic PNG is a priority sector during natural gas shortages.** During the 2026 supply disruption, the Government of India reported **100% allocation for domestic PNG and transport CNG** while restricting or managing allocation to some other sectors. This prioritisation helps protect household supply, but **does not guarantee uninterrupted gas service** during every crisis, pipeline fault or emergency. Follow official GAIL Gas advisories for any actual disruption.
+
+**Reference:** Ministry of Petroleum and Natural Gas (PIB, April 2026): https://www.pib.gov.in/PressReleasePage.aspx?PRID=2250179
 
 **---**
