@@ -298,6 +298,7 @@ def top_questions(current_faqs, n=TOP_QUESTIONS_SHOWN):
 st.set_page_config(page_title="GAIL Gas PNG Registration Assistant", page_icon="🏢", initial_sidebar_state="collapsed")
 st.title("GAIL Gas PNG Registration Assistant")
 st.caption("Conversational help for apartment residents applying for a PNG connection, from form choices and documents to payment and next steps.")
+st.page_link("pages/FAQ.py", label="Browse all FAQs")
 
 if "visited" not in st.session_state:
     st.session_state.visited = True
