@@ -84,6 +84,23 @@
       font-size: 16px;
     }
 
+    .assistant-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 0;
+      color: var(--lime);
+      font-size: 15px;
+      font-weight: 650;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .assistant-link:hover { color: var(--white); }
+    .assistant-link:focus-visible {
+      outline: 2px solid var(--lime);
+      outline-offset: 4px;
+    }
+
     main { padding: 27px 0 64px; }
 
     .search-panel {
@@ -247,7 +264,8 @@
     <div class="masthead-inner">
       <div class="identity"><span class="identity-mark" aria-hidden="true">PNG</span> Resident information</div>
       <h1>GAIL Gas PNG FAQ</h1>
-      <p class="intro">Answers for residents of Icon Happy Living Apartment, Kammasandra.</p>
+      <p class="intro">Answers to common questions about GAIL Gas PNG connections.</p>
+      <a class="assistant-link" href="https://gailgasconnection.streamlit.app/" target="_blank" rel="noopener noreferrer">Ask the AI assistant <span aria-hidden="true">&#8599;</span><span class="assistant-link-context"> (opens in a new tab)</span></a>
     </div>
   </header>
 
