@@ -24,7 +24,7 @@ For Icon Happy Living Apartment, Kammasandra, Bengaluru.
 
 **Answer:** Register through the official GAIL Gas customer registration portal:
 
-https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
+https://mypng.gov.in/
 
 **---**
 
