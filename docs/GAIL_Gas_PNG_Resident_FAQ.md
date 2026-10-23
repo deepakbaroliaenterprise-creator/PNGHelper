@@ -2,7 +2,7 @@
 
 For residents of any apartment or housing society in a GAIL Gas-served area. Choose the applicable geographical area and verify local tariffs and rollout details.
 
-**Baseline:** 58 FAQs, sequentially numbered FAQ-001 to FAQ-058. Apartment-neutral edition, 23 October 2026.
+**Baseline:** 59 FAQs, sequentially numbered FAQ-001 to FAQ-059. Apartment-neutral edition, 23 October 2026.
 
 **Note:** Registration options, tariffs, support numbers, and rollout schedules vary by GAIL Gas geographical area. Confirm applicable details on the official GAIL Gas portal.
 
@@ -24,9 +24,9 @@ For residents of any apartment or housing society in a GAIL Gas-served area. Cho
 - Where do I register?
 - Give me the registration link.
 
-**Answer:** Register through the official GAIL Gas customer registration portal:
+**Answer:** Register for a new PNG connection through the PNG registration portal:
 
-https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
+https://mypng.gov.in/
 
 **---**
 
@@ -182,7 +182,7 @@ Do not pay cash or transfer money to an individual representative, personal bank
 - How many days for approval?
 - When will my application be processed?
 
-**Answer:** GAIL Gas does **not specify a fixed number of days** for approval or processing in its published registration terms. After receiving the completed registration and applicable deposit, GAIL Gas starts the process of providing the connection. The time can vary depending on technical feasibility, whether the area is gasified, access to the premises and any required apartment/society or statutory permissions.
+**Answer:** GAIL Gas does **not specify a fixed number of days** for approval or processing in its published registration terms. GAIL Gas officials review the submitted application, and the BP Number is issued after approval. The security deposit is paid after BP Number generation and the applicable payment instructions. The time to provide the connection can vary depending on technical feasibility, whether the area is gasified, access to the premises and any required apartment/society or statutory permissions.
 
 Applications may also depend on whether the property is within a gasified and serviceable area.
 
@@ -272,7 +272,7 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 - What happens after I apply?
 - What happens after payment?
 
-**Answer:** After registration, complete the applicable deposit/payment, keep the acknowledgement, respond to any GAIL Gas verification request and cooperate when flat-level installation and commissioning are scheduled.
+**Answer:** After submitting registration at https://mypng.gov.in/, wait for GAIL Gas officials to review and approve the application. Once a Business Partner (BP) Number is generated, the applicant receives an SMS on the registered mobile number. Pay the applicable security deposit using that BP Number at https://customer.gailgaspng.com/online/billpay after receiving the payment instructions. Keep the acknowledgement and payment receipt, respond to verification requests, and cooperate when installation is scheduled.
 
 **---**
 
@@ -774,5 +774,27 @@ Under the Standard Deposit plan, gas usage charges reflect actual metered SCM co
 **Important:** These are indicative calculations, **not a guaranteed monthly bill**. Check GAIL Gas's current tariff for your geographical area before estimating costs.
 
 **Reference:** https://pngrb.gov.in/eng-web/png-cng-prices.html
+
+**---**
+
+**## FAQ-059: When should I pay the PNG security deposit?**
+
+**Example questions:**
+- When should the security deposit be paid?
+- Should I pay immediately after registration?
+- Do I need to wait for application approval?
+- How will I know when to pay the security deposit?
+- Will I receive an SMS with my BP Number?
+- Where should I pay the security deposit?
+
+**Answer:** The security deposit should be paid **after GAIL Gas approves your registration and generates your BP Number**, not immediately after submitting the application.
+
+1. **Submit registration** at https://mypng.gov.in/.
+2. **Wait for application approval** by GAIL Gas officials.
+3. **Receive the BP Number by SMS** on your registered mobile number after it is generated.
+4. **Pay the applicable security deposit** using your BP Number on the official GAIL Gas payment portal: https://customer.gailgaspng.com/online/billpay.
+5. **Save your payment receipt** and BP Number for future reference.
+
+**Important:** Pay only through official GAIL Gas channels after BP Number generation and applicable payment instructions. Do not transfer funds to individuals or personal UPI accounts.
 
 **---**

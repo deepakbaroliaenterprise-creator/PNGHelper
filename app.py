@@ -24,7 +24,7 @@ NO_ANSWER_MARKER = "NO_ANSWER:"
 GSHEET_SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 # ---- Most-asked-question tracking (persisted in Google Sheets) ----
-QUESTION_USAGE_FIELDS = ["question", "answer", "count"]
+QUESTION_USAGE_FIELDS = ["faq_id", "question", "answer", "count"]
 TOP_QUESTIONS_SHOWN = 3
 
 # "### **Q: ...**" / "### Q: ..." style (legacy FAQ documents)
@@ -38,7 +38,7 @@ MD_QA_PATTERN = re.compile(
     re.DOTALL,
 )
 NEW_MD_QA_PATTERN = re.compile(
-    r"^\*{0,2}##\s+FAQ-\d+:\s*(?P<question>.+?)\*{0,2}\s*$\n+"
+    r"^\*{0,2}##\s+(?P<faq_id>FAQ-\d+):\s*(?P<question>.+?)\*{0,2}\s*$\n+"
     r"\*\*Example questions:\*\*\s*\n(?P<examples>.*?)(?=\n+\*\*Answer:\*\*)\n+"
     r"\*\*Answer:\*\*\s*(?P<answer>.*?)(?=\n+\*{0,2}---\*{0,2}\s*$|\Z)",
     re.DOTALL | re.MULTILINE | re.IGNORECASE,
@@ -94,6 +94,12 @@ def get_worksheets():
     except gspread.exceptions.WorksheetNotFound:
         usage_ws = sh.add_worksheet("QuestionUsage", rows=1000, cols=len(QUESTION_USAGE_FIELDS))
         usage_ws.append_row(QUESTION_USAGE_FIELDS, value_input_option="RAW")
+    else:
+        headers = usage_ws.row_values(1)
+        if not headers:
+            usage_ws.append_row(QUESTION_USAGE_FIELDS, value_input_option="RAW")
+        elif headers[0] != "faq_id":
+            usage_ws.insert_cols([["faq_id"]], col=1, value_input_option="RAW")
 
     return questions_ws, stats_ws, usage_ws
 
@@ -122,11 +128,12 @@ def chunk(text):
 def parse_faq_pairs(text):
     pairs = []
     for m in NEW_MD_QA_PATTERN.finditer(text):
+        faq_id = m.group("faq_id").upper()
         question = m.group("question").strip()
         examples = m.group("examples").strip()
         answer = m.group("answer").strip()
         if question and answer:
-            pairs.append((question, answer, f"{question}\n{examples}"))
+            pairs.append((faq_id, question, answer, f"{question}\n{examples}"))
     if pairs:
         return pairs
 
@@ -136,7 +143,7 @@ def parse_faq_pairs(text):
             question = m.group("question").strip()
             answer = m.group("answer").strip()
             if question and answer:
-                pairs.append((question, answer, question))
+                pairs.append(("", question, answer, question))
         if pairs:
             return pairs
     return []
@@ -186,10 +193,10 @@ def build_index():
     for name, text in read_docs():
         pairs = parse_faq_pairs(text)
         if pairs:
-            for question, answer, searchable_question in pairs:
+            for faq_id, question, answer, searchable_question in pairs:
                 chunks.append(f"Question and examples:\n{searchable_question}\nAnswer: {answer}")
                 sources.append(name)
-                chunk_qa.append((question, answer))
+                chunk_qa.append((faq_id, question, answer))
                 search_texts.append(f"Question and examples:\n{searchable_question}")
         else:
             for c in chunk(text):
@@ -259,16 +266,24 @@ def bump_stat(key):
     return 1
 
 
-def bump_question_usage(question, answer):
+def bump_question_usage(faq_id, question, answer):
     _, _, usage_ws = get_worksheets()
     values = usage_ws.get_all_values()
     header, *rows = values
+    columns = {name: header.index(name) for name in QUESTION_USAGE_FIELDS}
     for i, row in enumerate(rows, start=2):
-        if row and row[0] == question:
-            current = int(row[2]) if len(row) > 2 and row[2].strip().isdigit() else 0
-            usage_ws.update(range_name=f"C{i}", values=[[current + 1]], value_input_option="RAW")
+        row_faq_id = row[columns["faq_id"]] if len(row) > columns["faq_id"] else ""
+        row_question = row[columns["question"]] if len(row) > columns["question"] else ""
+        if (faq_id and row_faq_id == faq_id) or row_question == question:
+            count_value = row[columns["count"]] if len(row) > columns["count"] else "0"
+            current = int(count_value) if count_value.isdigit() else 0
+            usage_ws.update(
+                range_name=f"A{i}:D{i}",
+                values=[[faq_id, question, answer, current + 1]],
+                value_input_option="RAW",
+            )
             return
-    usage_ws.append_row([question, answer, 1], value_input_option="RAW")
+    usage_ws.append_row([faq_id, question, answer, 1], value_input_option="RAW")
 
 
 def top_questions(current_faqs, n=TOP_QUESTIONS_SHOWN):
@@ -278,12 +293,23 @@ def top_questions(current_faqs, n=TOP_QUESTIONS_SHOWN):
         return []
     header, *rows = values
     records = []
-    for row in rows:
+    for i, row in enumerate(rows, start=2):
         record = dict(zip(header, row))
-        question = record.get("question", "")
-        if question not in current_faqs:
+        faq_id = record.get("faq_id", "")
+        faq = current_faqs.get(faq_id)
+        if faq is None:
+            faq_id = next(
+                (current_id for current_id, (current_question, _) in current_faqs.items()
+                 if current_question == record.get("question", "")),
+                "",
+            )
+            faq = current_faqs.get(faq_id)
+            if faq_id:
+                usage_ws.update(range_name=f"A{i}", values=[[faq_id]], value_input_option="RAW")
+        if faq is None:
             continue
-        record["answer"] = current_faqs[question]
+        record["faq_id"] = faq_id
+        record["question"], record["answer"] = faq
         records.append(record)
 
     def count_of(r):
@@ -309,7 +335,11 @@ if matrix is None:
     st.error("No supported documents found. Add PDF, TXT or Markdown files to the 'docs' folder.")
     st.stop()
 
-current_faqs = {faq[0]: faq[1] for faq in chunk_qa if faq is not None}
+current_faqs = {
+    faq[0]: (faq[1], faq[2])
+    for faq in chunk_qa
+    if faq is not None and faq[0]
+}
 top_qs = top_questions(current_faqs)
 if top_qs:
     st.subheader("📊 Most Asked Questions")
