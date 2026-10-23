@@ -1,8 +1,10 @@
 # GAIL Gas PNG Connection - Resident FAQ
 
-For Icon Happy Living Apartment, Kammasandra, Bengaluru.
+For residents of any apartment or housing society in a GAIL Gas-served area. Choose the applicable geographical area and verify local tariffs and rollout details.
 
-**Baseline:** 57 consolidated FAQs, sequentially numbered FAQ-001 to FAQ-057. Updated 21 October 2026.
+**Baseline:** 58 FAQs, sequentially numbered FAQ-001 to FAQ-058. Apartment-neutral edition, 23 October 2026.
+
+**Note:** Registration options, tariffs, support numbers, and rollout schedules vary by GAIL Gas geographical area. Confirm applicable details on the official GAIL Gas portal.
 
 **## FAQ-001: What is a GAIL Gas PNG connection?**
 
@@ -24,7 +26,7 @@ For Icon Happy Living Apartment, Kammasandra, Bengaluru.
 
 **Answer:** Register through the official GAIL Gas customer registration portal:
 
-https://mypng.gov.in/
+https://customer.gailgaspng.com/Home/CustomerRegistration_BeforeLogin
 
 **---**
 
@@ -48,7 +50,7 @@ https://youtu.be/5faIlx5RX9I?si=iwugi9k0lUPttmFP
 - What does GA mean?
 - Which geographical area should I select?
 
-**Answer:** Select the applicable City / Geographical Area shown in the registration form. For apartments located in Bengaluru, select **Bengaluru GA**, where applicable.
+**Answer:** Select the applicable City / Geographical Area shown in the registration form. Select the **City / Geographical Area (GA)** that covers the address of your flat; do not select a different GA merely because it appears in an example.
 
 **---**
 
@@ -182,7 +184,7 @@ Do not pay cash or transfer money to an individual representative, personal bank
 
 **Answer:** GAIL Gas does **not specify a fixed number of days** for approval or processing in its published registration terms. After receiving the completed registration and applicable deposit, GAIL Gas starts the process of providing the connection. The time can vary depending on technical feasibility, whether the area is gasified, access to the premises and any required apartment/society or statutory permissions.
 
-For Bengaluru GA, applications may also depend on whether the location is in a gasified area.
+Applications may also depend on whether the property is within a gasified and serviceable area.
 
 **---**
 
@@ -374,19 +376,27 @@ An NOC may be required for rented flats, multi-storey apartment buildings, or wh
 
 **---**
 
-**## FAQ-031: What happens if the PNG pipeline leaks, is damaged, or requires maintenance?**
+**## FAQ-031: What happens if PNG supply stops for a few days due to leakage, maintenance or other disruption?**
 
 **Example questions:**
-- What if the gas pipeline is down?
-- What happens if the main PNG pipeline leaks?
+- What if PNG supply stops for 2–3 days?
+- How will we cook if there is no PNG supply?
+- What happens if the main gas pipeline leaks or is damaged?
 - Will the entire apartment lose gas supply?
-- How will GAIL supply gas while the pipeline is repaired?
-- Will we be informed about maintenance?
-- How long will it take to restore PNG supply?
+- Will GAIL provide alternative gas during an outage?
+- How long does it take to restore gas supply?
+- Will we get compensation if PNG is unavailable?
 
-**Answer:** If a gas pipeline is damaged or leaking, GAIL Gas may **isolate the affected section and temporarily stop supply** to the affected flats or area for safety. Authorised personnel will inspect and repair the pipeline and restore supply after safety checks. An alternative pipeline route may be used **only if technically available; continuous supply is not guaranteed**. Planned shutdowns are generally communicated through available GAIL Gas/apartment association channels. There is no guaranteed restoration time.
+**Answer:** GAIL Gas aims to maintain supply, but **temporary interruptions can occur** during leakage, maintenance, shortages or emergency repairs.
 
-**Important:** If you smell gas, do not operate electrical switches or use flames; move to safety and contact the GAIL Gas emergency helpline. See FAQ-041 for emergency precautions.
+- **Leakage or damage:** The affected pipeline section may be isolated and supply temporarily stopped for safety. Supply resumes after authorised repairs and safety checks.
+- **Planned maintenance:** Notices are generally shared through GAIL Gas and/or apartment association channels.
+- **Restoration:** GAIL Gas makes efforts to restore supply as early as possible, but no fixed restoration time is guaranteed.
+- **Backup cooking:** Keep a safe alternative such as an **induction cooktop**. Replacement LPG cylinders are **not automatically provided** during outages.
+- **Billing:** No gas usage charge applies for gas not consumed, subject to actual meter readings; any separate applicable charges are governed by the selected plan.
+- **Compensation:** Eligibility, if any, depends on applicable regulations, outage circumstances and GAIL Gas's assessment; it is not automatically guaranteed.
+
+**Important:** If you smell gas, avoid flames and electrical switches, move to safety and contact GAIL Gas emergency support. See FAQ-041.
 
 **Reference:** https://www.gailonline.com/pdf/About/CitizenCharter_GAIL_08_01_2024.pdf
 
@@ -442,22 +452,16 @@ If the backup stove is intended to use LPG, the LPG connection rules applicable 
 
 **---**
 
-**## FAQ-036: How long will it take to get the PNG connection at Icon Happy Living Apartment, Kammasandra?**
+**## FAQ-036: When will PNG connections become available in my apartment?**
 
 **Example questions:**
-- When will PNG start in Icon Happy Living?
-- How soon will we get gas connection in Icon Happy Living Apartment?
-- When will GAIL Gas start work in our apartment?
+- When will PNG start in our apartment?
+- How soon will we get PNG connection in our building?
+- When will GAIL Gas start infrastructure work in our society?
 - I have registered. When will installation start?
-- How long will it take to get PNG in Kammasandra?
+- Does resident participation affect rollout timing?
 
-**Answer:** The PNG infrastructure at **Icon Happy Living Apartment, Kammasandra** is expected to be taken up soon.
-
-GAIL Gas typically looks for sufficient resident participation before committing to apartment-level infrastructure. Higher registration helps demonstrate that enough residents intend to use the facility before the infrastructure is set up.
-
-Icon Happy Living has already made **good progress with resident registrations**, and the work is expected to start soon.
-
-If you have not registered yet, please complete your PNG registration at the earliest. Higher participation will help strengthen the case for faster infrastructure rollout in the apartment.
+**Answer:** There is **no universal installation date for all apartments**. Timing depends on local pipeline readiness, technical feasibility, approvals and access to common areas. Resident registration may help GAIL Gas assess demand, but a high registration count does not guarantee an installation schedule. Request apartment-specific updates from GAIL Gas and your association. Register only through authorised GAIL Gas channels.
 
 **---**
 
@@ -469,12 +473,12 @@ If you have not registered yet, please complete your PNG registration at the ear
 - What is the charge per unit or per SCM?
 - How much does GAIL Gas charge for usage?
 - How is my PNG bill calculated?
-- What is the current price per SCM in Bengaluru?
+- What is the current PNG price per SCM in my city?
 - How much do I pay for each SCM of gas?
 
 **Answer:** PNG is billed based on the **actual gas consumed**, measured in **Standard Cubic Metres (SCM)**. The applicable domestic PNG tariff can change from time to time, so the bill is calculated using the prevailing GAIL Gas rate for the area.
 
-For Bengaluru Rural / Urban, the latest PNGRB-published record available in the source data lists domestic PNG at **Rs. 55 per SCM as of 03 June 2026**. Please treat this only as a reference rate because tariffs may be revised.
+**Rates vary by geographical area and may change.** Check the current domestic PNG tariff for your registered address on official GAIL Gas or PNGRB sources before estimating the bill.
 
 **Reference:** https://pngrb.gov.in/eng-web/png-cng-prices.html
 
@@ -535,9 +539,9 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 **Example questions:**
 - I smell gas in the kitchen. What should I do?
 - What is the PNG gas leak emergency number?
-- Who should I call for a gas leak in Bengaluru?
+- Who should I call for a gas leak in my city?
 
-**Answer:** If you suspect a gas leak, close the gas valve **only if safe**, open windows/doors, do not use flames or operate electrical switches, and move to safety. Call GAIL Gas emergency support **from a safe location**. The previously listed Bengaluru emergency number is **1800-102-9282**; verify it against current official GAIL Gas materials before deployment. In case of fire, call emergency services.
+**Answer:** If you suspect a gas leak, close the gas valve **only if safe**, open windows/doors, do not use flames or operate electrical switches, and move to safety. Call GAIL Gas emergency support **from a safe location**. Use the **emergency number published by GAIL Gas for your service area**; verify it on the official portal, bill, or safety notice before deployment. In case of fire, call emergency services.
 
 **---**
 
@@ -686,26 +690,30 @@ Keep the BP Number safely for future PNG-related transactions and service reques
 
 **---**
 
-**## FAQ-055: How much can I save by switching from LPG to PNG?**
+**## FAQ-055: How much can I save by switching from LPG to PNG, and what if I use 15 kg of LPG per month?**
 
 **Example questions:**
 - What is the price savings compared to LPG?
 - What is the savings?
-- What is the price difference between PNG and LPG?
 - Is PNG cheaper than LPG?
-- How much money can I save by using PNG?
-- Is PNG more economical than LPG cylinders?
+- How much does 15 kg of LPG cost when converted to PNG?
+- What would my monthly PNG bill be if I currently use 15 kg of LPG?
+- How much does GAIL charge per SCM?
+- How is PNG consumption calculated?
 
-**Answer:** PNG and LPG have **similar estimated cooking costs** at the reference rates below. Savings depend on the latest tariff and actual consumption.
+**Answer:** PNG is billed by the meter in **Standard Cubic Metres (SCM)**, not by LPG kilograms. Actual savings depend on tariffs, cooking habits and stove efficiency.
 
-- **LPG:** Rs. 944.50 for a domestic 14.2 kg cylinder in Bengaluru (October 2026 reference).
-- **PNG:** Rs. 55 per SCM (Bengaluru reference published as of 03 June 2026; verify the latest GAIL tariff).
-- **Approximate equivalent consumption:** 17–18 SCM of PNG for one 14.2 kg LPG cylinder (illustrative, not an exact appliance-to-appliance conversion).
-- **Estimated equivalent PNG cost:** Rs. 935–990 at Rs. 55 per SCM. This could be slightly cheaper or slightly more expensive than LPG, so **savings are not guaranteed**.
+- **Illustrative LPG use:** 15 kg per month.
+- **Approximate energy-equivalent PNG use:** about **18–19 SCM per month** (not an exact conversion).
+- **PNG tariff:** Use the current GAIL Gas rate per SCM for your city / geographical area.
+- **Estimated PNG usage charge:** Multiply 18–19 SCM by the current local rate per SCM. For example, at an *illustrative* ₹55/SCM, the usage charge would be around ₹990–₹1,045 per month.
+- **LPG comparison:** Compare against the current price of a 14.2 kg domestic LPG cylinder in your city. **PNG may not necessarily cost less**; prices and efficiency vary.
 
-PNG also avoids cylinder booking and replacement, subject to supply availability. Under the standard deposit plan, charges are primarily based on gas consumed; FLEXI rental or other applicable charges may differ.
+Under the Standard Deposit plan, gas usage charges reflect actual metered SCM consumption. FLEXI rental, taxes or other applicable fees may change the total payable.
 
-**References:** https://www.goodreturns.in/lpg-price-in-bangalore.html ; https://pngrb.gov.in/eng-web/png-cng-prices.html
+**Important:** These figures are estimates for comparison, not a guaranteed bill or saving. Confirm the latest tariffs before comparing costs.
+
+**Reference:** https://pngrb.gov.in/eng-web/png-cng-prices.html
 
 **---**
 
@@ -717,14 +725,14 @@ PNG also avoids cylinder booking and replacement, subject to supply availability
 - Can I continue using LPG if PNG is available?
 - Do I have to register for PNG?
 - What happens if I do not register for PNG?
-- Is PNG mandatory at Icon Happy Living Apartment?
+- Is PNG mandatory in my apartment?
 
 **Answer:** **Yes, where PNG supply is available to the premises, the Government of India's 2026 framework provides for transition from LPG to PNG, subject to the applicable official notice and procedures.**
 
 - Residents should apply for PNG when the authorised provider confirms that it can supply their premises and issues the applicable notice.
 - **Domestic LPG supply may cease after three months** under the applicable notification process if an eligible household does not obtain PNG.
 - If a PNG connection is not technically feasible, ask GAIL Gas about obtaining the necessary **No Objection Certificate (NOC)** to continue LPG supply.
-- At **Icon Happy Living Apartment**, residents are encouraged to register early to support the apartment-level infrastructure rollout; nearby pipeline availability alone does not establish that the three-month notice period has begun.
+- For any apartment, nearby pipeline availability alone does not establish that an official notice has been served; check applicability and timelines for the specific premises.
 
 **Important:** The three-month period depends on the official process, not simply the existence of a pipeline near the apartment. Confirm the applicability of any notice with GAIL Gas.
 
@@ -745,5 +753,26 @@ PNG also avoids cylinder booking and replacement, subject to supply availability
 **Answer:** **Domestic PNG is a priority sector during natural gas shortages.** During the 2026 supply disruption, the Government of India reported **100% allocation for domestic PNG and transport CNG** while restricting or managing allocation to some other sectors. This prioritisation helps protect household supply, but **does not guarantee uninterrupted gas service** during every crisis, pipeline fault or emergency. Follow official GAIL Gas advisories for any actual disruption.
 
 **Reference:** Ministry of Petroleum and Natural Gas (PIB, April 2026): https://www.pib.gov.in/PressReleasePage.aspx?PRID=2250179
+
+**---**
+
+**## FAQ-058: How is my PNG bill calculated if I currently use 15 kg of LPG per month?**
+
+**Example questions:**
+- What will my PNG bill be if I use 15 kg of LPG monthly?
+- How much PNG is equivalent to 15 kg of LPG?
+- How is PNG billed for one LPG cylinder per month?
+- What does 15 kg of LPG cost in PNG?
+- How much is PNG per SCM in my city?
+
+**Answer:** PNG is billed by the **actual metered consumption in Standard Cubic Metres (SCM)**, not by kilograms of LPG. As an illustration:
+
+- **15 kg of LPG per month** is approximately **18–19 SCM of PNG** on an energy-equivalent basis; actual consumption depends on appliance efficiency.
+- **Estimated charge:** Multiply the approximate 18–19 SCM by the current PNG rate in your local area. For example, an *illustrative* ₹55/SCM rate gives **₹990–₹1,045 per month**, or **₹1,980–₹2,090 for two months**.
+- Under the Standard Deposit plan, gas usage charges depend on the actual meter reading. Other applicable charges or plan-specific rentals may affect the final bill.
+
+**Important:** These are indicative calculations, **not a guaranteed monthly bill**. Check GAIL Gas's current tariff for your geographical area before estimating costs.
+
+**Reference:** https://pngrb.gov.in/eng-web/png-cng-prices.html
 
 **---**
